@@ -1,78 +1,46 @@
 <template>
-<div class="h-auto ">
-
-  <section>
-    <div class=" items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
-      <div class="w-full mx-auto text-left">
-        <div class="relative flex-col items-center m-auto align-middle">
-          <div class="items-center gap-12 text-left lg:gap-24 lg:inline-flex">
-            <div class="flex flex-col m-auto md:order-first">
-              <div class="max-w-xl">
-                <div
-                >
-                  <p class="text-2xl uppercase font-medium tracking-tight text-black sm:text-4xl">
-                    why?
+<div class="h-auto pt-10 pb-10 " data-aos="fade-up">
+  <section aria-labelledby="feature-five" id="feature-five" class="overflow-y-auto bg-white lg:h-screen">
+    <div class="px-8 py-24 mx-auto lg:px-16 max-w-7xl md:px-12 xl:px-36 lg:flex">
+      <div class="lg:w-1/2">
+        <div class="top-0 pt-8 pb-16 lg:sticky">
+          <div>
+            <div class="lg:pr-24 md:pr-12">
+              <div>
+                <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                 Who are we ?
+                </p>
+                <p class="max-w-xl mt-4 text-lg tracking-tight text-gray-600">
+                  We are a reputable provider of cutting-edge solutions, specializing in digital transformation, product development, data analytics & AI, and delivering exceptional customer support. Our focus is on delivering excellence across all our services.
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
+                <a href="#contact" class="items-center justify-center w-full px-6 py-2.5 text-center duration-200 bg-green-500 rounded-full inline-flex hover:bg-green-500 bg-transparent border-2 text-green-500 border-green-500 hover:text-white font-medium focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <div class="flex-shrink-0">
+          <div>
+            <ul class="grid grid-cols-1 gap-12 mt-6 list-none lg:mt-0 lg:gap-24" role="list">
+              <li v-for="(specialization,index) in specializations" :key="index">
+                <div>
+                  <div class="flex items-center justify-center w-12 h-12 text-black bg-gray-100 rounded-xl">
+                    icon
+                  </div>
+                  <p class="mt-5 text-lg font-medium leading-6 text-black">
+                    {{specialization.title}}
                   </p>
                 </div>
-              </div>
-              <div class="mt-6 lg:max-w-7xl">
-                <ul class="grid grid-cols-2 gap-4 list-none lg:gap-6">
-                  <li>
-                    <div>
-                      <p class="mt-5 text-lg font-medium leading-6 text-black">
-                        Digital Transformation
-                      </p>
-                    </div>
-                    <div class="mt-2 text-base text-gray-500">
-                      Invent the digital future - reduce costs, grow sales and improve customer experiences
-                      changing needs of the tech industry, ensuring you'll always
-                      be ahead.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <p class="mt-5 text-lg font-medium leading-6 text-black">
-                        Product Development
-                      </p>
-                    </div>
-                    <div class="mt-2 text-base text-gray-500">
-                      Build successful products with the team that has done it first-hand Plus, our platform is constantly evolving to meet the
-                      changing needs of the tech industry, ensuring you'll always
-                      be ahead.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <p class="mt-5 text-lg font-medium leading-6 text-black">
-                        Data Analytics & AI
-                      </p>
-                    </div>
-                    <div class="mt-2 text-base text-gray-500">
-                      Build your own AI models and apps like ChatGPT for next-level growth Plus, our platform is constantly evolving to meet the
-                      changing needs of the tech industry, ensuring you'll always
-                      be ahead.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <p class="mt-5 text-lg font-medium leading-6 text-black">
-                        Customer support
-                      </p>
-                    </div>
-                    <div class="mt-2 text-base text-gray-500">
-                      Plus, our platform is constantly evolving to meet the
-                      changing needs of the tech industry, ensuring you'll always
-                      be ahead.
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div  class="order-first block w-full mt-12 aspect-square lg:mt-0 border border-black ">
-              <img
-
-                  class="object-cover object-center w-full mx-auto bg-gray-300 border lg:ml-auto" alt="some illustration " src="">
-            </div>
+                <div class="mt-2 text-base text-gray-500">
+                  {{specialization.description}}
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -86,10 +54,43 @@ import AOS from "aos";
 import {onMounted} from "vue";
 onMounted(() => {
   AOS.init({
-    duration: 1600,
+    duration: 1000,
   });
-
 })
 
-
+const specializations =[
+  {
+    icon:"Digital Transformation",
+    title:"Digital Transformation",
+    description:"At our core, we assist enterprises in navigating the intricate realm of digital transformation, enabling them to unearth fresh avenues for growth and success. With our expertise, we empower businesses to conquer the challenges they face and seize the full potential of the digital landscape, propelling their evolution forward."
+  },
+  {
+    icon:"Product Development",
+    title:"Product Development",
+    description:"Harnessing our profound expertise in product design and development, we possess the ability to metamorphose conceptual ideas into triumphant products. With our unwavering dedication and comprehensive knowledge, we cultivate innovation and seamlessly translate visions into tangible realities, driving product success and delivering exceptional user experiences."
+  },
+  {
+    icon:"Data Analytics & AI",
+    title:"Data Analytics & AI",
+    description:"Staying at the forefront of data analytics and AI, we proactively embrace the cutting-edge technologies to extract profound insights that drive meaningful intelligence. By constantly evolving our strategies and leveraging the latest advancements, we empower organizations to unlock the hidden potential within their data, enabling informed decision-making and gaining a competitive edge in today's data-driven landscape."
+  },
+  {
+    icon:"Customer support",
+    title:"Customer support",
+    description:"We prioritize customer satisfaction through reliable and responsive support services. Our customer-centric approach ensures swift issue resolution, exceeding expectations, and fostering long-lasting relationships built on trust and exceptional service delivery."
+  }
+]
 </script>
+
+<style scoped>
+/* Customize scrollbar styles */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 3px;
+  background: white;
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a0aec0;
+}
+</style>

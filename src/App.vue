@@ -3,10 +3,10 @@
 
   <main>
 <!--    hero section-->
+    <TestCarousel></TestCarousel>
     <Hero id="home"></Hero>
     <About id="about"></About>
-    <Team  data-aos="fade-up"></Team>
-
+    <Team data-aos="fade-up"></Team>
     <Project id="projects" ></Project>
     <Contact id="contact"></Contact>
   </main>
@@ -15,6 +15,7 @@
 </template>
 
 <script setup>
+import TestCarousel from "./components/TestCarousel.vue";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./views/Hero.vue";
 import About from "./views/About.vue";

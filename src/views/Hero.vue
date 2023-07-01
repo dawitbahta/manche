@@ -11,13 +11,12 @@
             <span
                 data-aos="fade-right"
                 >
-
-              Create Your future
+              Innovate, Simplify, Thrive
             </span>
-            <span class="md:block">Make life simpler with technology </span>
+            <span class="md:block" data-aos="fade-out">Make life simpler with technology </span>
           </p>
           <p class="max-w-xl mx-auto mt-8 text-base lg:text-xl text-slate-300">
-            We’re a software and services company that builds and transforms businesses using advance technologies, data and AI
+            We are a software and services company that uses advanced technologies, data, and AI to help businesses transform and grow.
           </p>
         </div>
         <div class="flex flex-col justify-center max-w-sm gap-3 mx-auto mt-10 sm:flex-row">

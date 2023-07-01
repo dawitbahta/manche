@@ -1,6 +1,9 @@
 <template>
+
   <div class="h-screen w-full overflow-auto">
-  <div v-for="(project,index) in projects" :key="index" :class="project.theme"  class="">
+  <div v-for="(project,index) in projects" :key="index" :class="project.theme" >
+    <h1 class="absolute left-0 xl:text-4xl text-3xl text-center font-extrabold p-4 mx-auto text-white border flex justify-start w-fit px-4 ">Projects</h1>
+
     <div class="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
       <div class=" h-screen dark:lg:bg-darker space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
         <div class="md:5/12 lg:w-1/2  items-center flex justify-center ">
@@ -9,7 +12,7 @@
               :src="project.ImageSrc"
               alt="image"
               loading="lazy"
-              class="h-[34rem] w-[34rem] object-cover"
+              class="h-[34rem] w-[34rem] object-cover pt-5"
 
           />
         </div>
@@ -59,9 +62,6 @@ onMounted(() => {
 
 })
 
-
-
-
 const projects = [
   {
     name:"Project Tanos",
@@ -85,12 +85,20 @@ const projects = [
 </script>
 
 <style scoped>
-
 .red{
   @apply bg-red-500;
 }
 .green{
   @apply bg-green-500;
 }
+/* Customize scrollbar styles */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 3px;
+  background: white;
 
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a0aec0;
+}
 </style>

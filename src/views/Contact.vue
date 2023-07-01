@@ -7,16 +7,14 @@
 
           <div class="py-6 md:py-0 md:px-6">
             <h1 class="text-4xl font-bold">Get in <span class="border-b-4 border-green-500 cursor-pointer">Touch</span></h1>
-            <p class="pt-2 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum dolore facilis nam quaerat. Ea eius fuga maxime tempora tenetur!</p>
+            <p class="pt-2 pb-4">Contact us today. Let's connect and discuss how we can assist you. Get in touch now!</p>
 
           <ContactInfo></ContactInfo>
 
           </div>
         </div>
-
-
         <div class=" rounded-l max-h-[60vh] z-20 bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-          <form @submit.prevent="submitForm" class="space-y-4" novalidate>
+          <form @submit.prevent="submitForm" class="space-y-4">
             <div>
               <label class="sr-only" for="name">Name</label>
               <input
@@ -100,7 +98,7 @@
 <script setup>
 import { ref} from 'vue';
 import ContactInfo from "../components/ContactInfo.vue";
-// import axios from "axios";
+import axios from "axios";
 
 
 const showNotification = ref(false)
@@ -120,9 +118,6 @@ const formData= ref({
   phone_no:'',
   content:''
 })
-
-
-
 
 
 function validateForm() {

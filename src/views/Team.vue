@@ -1,12 +1,12 @@
 <template>
     <div>
-      <div class="container flex justify-center mx-auto pt-16">
+      <div class="bg-gray-100 flex justify-center mx-auto pt-16">
         <div>
-          <p class="text-green-500 text-lg text-center font-normal pb-3">BUILDING TEAM</p>
+          <p class="text-green-500 text-md text-center font-bold pb-3">BUILDING TEAM</p>
           <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">The Talented People Behind the Scenes of the Organization</h1>
         </div>
       </div>
-      <div class="w-full bg-gray-100  pt-10">
+      <div class="w-full pt-10 bg-gray-100">
         <div class="container mx-auto ">
           <div class=" lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
             <div v-for="(member,index) in teamMembers" :key="index"
@@ -25,14 +25,14 @@
                   <div class="w-full flex justify-center pt-5 pb-5">
                     <a :href="member.github" target="_blank" class="mx-5">
                       <div aria-label="Github" role="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="">
                           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                         </svg>
                       </div>
                     </a>
                     <a :href="member.linkedIn" target="_blank" class="mx-5">
                       <div aria-label="Twitter" role="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="">
                           <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
@@ -41,7 +41,7 @@
                     </a>
                     <a :href="member.twitter" target="_blank"  class="mx-5">
                       <div aria-label="Instagram" role="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="">
                           <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
                         </svg>
                       </div>
@@ -68,7 +68,7 @@ onMounted(() => {
 
 const teamMembers = [
   {
-    name:"Yosef Jones",
+    name:"Adil Abdu",
     imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
     title:"Principal Software Engineer",
     "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
@@ -76,7 +76,7 @@ const teamMembers = [
     github:"http://github.com/yosef-seboka",
     "twitter":"https://twitter.com/YosefSeboka"
   },  {
-    name:"Yosef Jones",
+    name:"Yosef Seboka ",
     imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
     title:"Principal Software Engineer",
     "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
@@ -84,7 +84,7 @@ const teamMembers = [
     github:"http://github.com/yosef-seboka",
     "twitter":"https://twitter.com/YosefSeboka"
   },  {
-    name:"Yosef Jones",
+    name:"Biniam Lemma",
     imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
     title:"Principal Software Engineer",
     "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
@@ -92,7 +92,43 @@ const teamMembers = [
     github:"http://github.com/yosef-seboka",
     "twitter":"https://twitter.com/YosefSeboka"
   },  {
-    name:"Yosef Jones",
+    name:"kalid Abdu",
+    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
+    title:"Principal Software Engineer",
+    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
+    linkedIn:"http://www.linkedin.com/in/yosefseboka",
+    github:"http://github.com/yosef-seboka",
+    "twitter":"https://twitter.com/YosefSeboka"
+  },
+  {
+    name:"Bereket Gobezie",
+    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
+    title:"Principal Software Engineer",
+    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
+    linkedIn:"http://www.linkedin.com/in/yosefseboka",
+    github:"http://github.com/yosef-seboka",
+    "twitter":"https://twitter.com/YosefSeboka"
+  },
+  {
+    name:"Firaol Dida",
+    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
+    title:"Principal Software Engineer",
+    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
+    linkedIn:"http://www.linkedin.com/in/yosefseboka",
+    github:"http://github.com/yosef-seboka",
+    "twitter":"https://twitter.com/YosefSeboka"
+  },
+  {
+    name:"Eyuel Ayalew",
+    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
+    title:"Principal Software Engineer",
+    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
+    linkedIn:"http://www.linkedin.com/in/yosefseboka",
+    github:"http://github.com/yosef-seboka",
+    "twitter":"https://twitter.com/YosefSeboka"
+  },
+  {
+    name:"Beka Hayle",
     imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
     title:"Principal Software Engineer",
     "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
