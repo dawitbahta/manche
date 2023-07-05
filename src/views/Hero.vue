@@ -36,8 +36,5 @@ AOS.init({
   // Global settings:
   disable: false,
   duration: 1600,
-  easing: 'ease-in-out-back'
-
-
 });
 </script>

@@ -1,6 +1,6 @@
 <template>
-<div class="h-auto pt-10 pb-10 " data-aos="fade-up">
-  <section aria-labelledby="feature-five" id="feature-five" class="overflow-y-auto bg-white lg:h-screen">
+<div class="h-auto pt-1 pb-10 ">
+  <section data-aos="fade-up" aria-labelledby="feature-five" id="feature-five" class="overflow-y-auto bg-white lg:h-screen">
     <div class="px-8 py-24 mx-auto lg:px-16 max-w-7xl md:px-12 xl:px-36 lg:flex">
       <div class="lg:w-1/2">
         <div class="top-0 pt-8 pb-16 lg:sticky">
@@ -29,8 +29,8 @@
             <ul class="grid grid-cols-1 gap-12 mt-6 list-none lg:mt-0 lg:gap-24" role="list">
               <li v-for="(specialization,index) in specializations" :key="index">
                 <div>
-                  <div class="flex items-center justify-center w-12 h-12 text-black bg-gray-100 rounded-xl">
-                    icon
+                  <div class="flex items-center justify-center w-12 h-12  rounded-xl">
+                    <img :src="specialization.imageSrc">
                   </div>
                   <p class="mt-5 text-lg font-medium leading-6 text-black">
                     {{specialization.title}}
@@ -52,6 +52,10 @@
 <script setup>
 import AOS from "aos";
 import {onMounted} from "vue";
+import dataTransformation from "../assets/icons/data-transformation.png";
+import customerService from "../assets/icons/customer-service.png";
+import productDevelopment from "../assets/icons/productDevelopment.png";
+import ai from "../assets/icons/ai.png";
 onMounted(() => {
   AOS.init({
     duration: 1000,
@@ -60,22 +64,22 @@ onMounted(() => {
 
 const specializations =[
   {
-    icon:"Digital Transformation",
+    imageSrc:dataTransformation,
     title:"Digital Transformation",
     description:"At our core, we assist enterprises in navigating the intricate realm of digital transformation, enabling them to unearth fresh avenues for growth and success. With our expertise, we empower businesses to conquer the challenges they face and seize the full potential of the digital landscape, propelling their evolution forward."
   },
   {
-    icon:"Product Development",
+    imageSrc:productDevelopment,
     title:"Product Development",
     description:"Harnessing our profound expertise in product design and development, we possess the ability to metamorphose conceptual ideas into triumphant products. With our unwavering dedication and comprehensive knowledge, we cultivate innovation and seamlessly translate visions into tangible realities, driving product success and delivering exceptional user experiences."
   },
   {
-    icon:"Data Analytics & AI",
+    imageSrc:ai,
     title:"Data Analytics & AI",
     description:"Staying at the forefront of data analytics and AI, we proactively embrace the cutting-edge technologies to extract profound insights that drive meaningful intelligence. By constantly evolving our strategies and leveraging the latest advancements, we empower organizations to unlock the hidden potential within their data, enabling informed decision-making and gaining a competitive edge in today's data-driven landscape."
   },
   {
-    icon:"Customer support",
+    imageSrc:customerService,
     title:"Customer support",
     description:"We prioritize customer satisfaction through reliable and responsive support services. Our customer-centric approach ensures swift issue resolution, exceeding expectations, and fostering long-lasting relationships built on trust and exceptional service delivery."
   }

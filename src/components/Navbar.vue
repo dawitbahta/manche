@@ -10,13 +10,11 @@
         mx-auto
         md:flex md:justify-between md:items-center
         text-center
-      font-semibold
-text-gray-400
+        font-semibold
+        text-gray-400
         transition-all duration-500
         bg-white
         sm:bg-transparent
-
-
               "
         :class="{ 'sm:bg-white text-black shadow-md ': scrolled }"
     >

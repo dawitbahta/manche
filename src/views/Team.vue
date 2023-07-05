@@ -1,5 +1,5 @@
 <template>
-    <div>
+
       <div class="bg-gray-100 flex justify-center mx-auto pt-16">
         <div>
           <p class="text-green-500 text-md text-center font-bold pb-3">BUILDING TEAM</p>
@@ -22,120 +22,159 @@
                   <h1 class="font-bold text-3xl text-center mb-1">{{member.name}}</h1>
                   <p class="text-gray-800 text-sm text-center">{{member.title}}</p>
                   <p class="text-center text-gray-600 text-base pt-3 font-normal">{{member.roleDescription}}</p>
-                  <div class="w-full flex justify-center pt-5 pb-5">
-                    <a :href="member.github" target="_blank" class="mx-5">
-                      <div aria-label="Github" role="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="">
-                          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
+
+                  <div class="flex py-5 items-end ">
+                      <div :class="member.upwork? 'justify-between' :'justify-evenly'" class="w-2/4 h-10  flex  items-center   ">
+                        <a v-if="member.github" :href="member.github" target="_blank" class="  h-full flex items-center">
+                          <box-icon type='logo' name='github' class="fill-gray-500 hover:fill-green-600" ></box-icon>
+                        </a>
+
+                        <a   v-if="member.linkedIn" :href="member.linkedIn" target="_blank" class="h-full flex items-center">
+                            <box-icon type='logo' name='linkedin' class="fill-gray-500 hover:fill-green-600"></box-icon>
+                        </a>
+
+                        <a v-if="member.upwork" :href="member.upwork" target="_blank"  class="  h-full flex items-center">
+                          <box-icon type='logo' name='upwork' class="fill-gray-500 hover:fill-green-600"></box-icon>
+                        </a>
+
                       </div>
-                    </a>
-                    <a :href="member.linkedIn" target="_blank" class="mx-5">
-                      <div aria-label="Twitter" role="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="">
-                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                      </div>
-                    </a>
-                    <a :href="member.twitter" target="_blank"  class="mx-5">
-                      <div aria-label="Instagram" role="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="">
-                          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                        </svg>
-                      </div>
-                    </a>
+
+                    <div class="w-2/4 h-10  flex justify-end items-center text-sm  hover:text-green-600   ">
+                            <box-icon name='current-location' class="fill-gray-500 hover:fill-green-600 w-5 "></box-icon>
+
+                          <div class=" px-1 fill-gray-500 hover:text-green-600 ">
+                              {{ member.location }}
+                          </div>
+                    </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 </template>
 
 <script setup>
 import AOS from "aos";
 import {onMounted} from "vue";
+import adil from "../assets/teams/adil.jpeg";
+import beka from "../assets/teams/bekaHaile.jpeg";
+import yosef from "../assets/teams/yosefSeboka.jpeg";
+import biniyam from "../assets/teams/biniyamLemma.jpeg";
+import kalid from '../assets/teams/kalidAbdu.jpeg';
+import eyouel from '../assets/teams/eyouelKenfu.jpeg';
+import firaol from '../assets/teams/firaolDida.jpeg';
+import bereket from '../assets/teams/bereketGobeze.jpeg';
+import haben from '../assets/teams/habenAmare.jpeg';
+import placeHolder from '../assets/teams/placeHolder.png';
 onMounted(() => {
   AOS.init({
     duration: 1200,
   });
-
 })
 
 const teamMembers = [
   {
+    imageSrc:adil,
     name:"Adil Abdu",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
+    title:"Senior Developer | Board Member | CFO",
+    roleDescription:"Lead author on an IEEE Access publication on unsupervised machine learning algorithms, involved in internationally nominated projects.",
     linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
-  },  {
-    name:"Yosef Seboka ",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
-  },  {
-    name:"Biniam Lemma",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
-  },  {
-    name:"kalid Abdu",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
+    github:"https://github.com/adilabdu",
+    upwork:"https://www.upwork.com/freelancers/~012639c223643a15e8",
+    location:"Ethiopia"
   },
   {
-    name:"Bereket Gobezie",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
+    imageSrc:yosef,
+    name:"Yosef Seboka ",
+    title:"Analytics Lead | Board Member | Developer",
+    roleDescription:"Analyst with a strong engineering background adeptly devises innovative approaches to drive growth and enhance operational efficiency.",
+    linkedIn:"https://www.linkedin.com/in/yosefseboka",
+    github:"https://github.com/yosef-seboka",
+    location:"Ethiopia"
+
+  },
+  {
+    imageSrc:biniyam,
+    name:"Biniyam Lemma ",
+    title:"Full Stack Developer | Board Member | COO",
+    roleDescription:"As a dynamic leader and skilled full-stack developer, Biniyam's strategic insights and technical expertise drive our company's success and growth.",
+    linkedIn:"https://www.linkedin.com/in/biniyam-lemma-2a580615a/",
+    github:"https://github.com/biniya",
+    location:"Ethiopia"
+
+  },
+  {
+    imageSrc:kalid,
+    name:"Kalid Abdu",
+    title:"Senior Developer | Board Member | CTO",
+    roleDescription:"Possess 5+ years of programming and software development experience, having contributed to internationally recognized and renowned projects.",
+    linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
+    github:"https://github.com/Kalid10",
+    upwork:"https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
+    location:"Ethiopia"
+
+  },  {
+    name:"Banchialem Maru",
+    imageSrc:placeHolder,
+    title:"Board Member | Strategic Advisor | Investor ",
+    roleDescription:"A visionary and empathetic leader who is passionately dedicated to helping others achieve their goals. With an unwavering commitment to consistently inspiring and empowering those around",
+    location:"Ethiopia"
+  },
+  {
+    name:"Thomas Melesse",
+    imageSrc:placeHolder,
+    title:"Board Member | Strategic Advisor | Investor",
+    roleDescription:"A keen investor who brings his sharp business acumen to our team. Thomas' strategic investments and insights significantly contribute to the company's ongoing success.",
+    location:"Ethiopia"
+  },
+  {
+    name:"Bereket Gobeze",
+    imageSrc:bereket,
+    title:"Advisor | Senior Software Engineer",
+    roleDescription:"An accomplished senior software engineer and former CTO, now an advisor and senior software engineer at our company, driving technological excellence and strategic growth.",
+    linkedIn:"https://www.linkedin.com/in/bereket-gobeze/",
+    github:"https://github.com/bereketnyb",
+    location:"Ethiopia"
+  },
+  {
+    name:"Eyouel Kenfu ",
+    imageSrc:eyouel,
+    title:"Advisor | Software Engineer",
+    roleDescription:"Experienced Global Operations Specialist at META (Facebook), With a Bachelor's degree in Computer Science and proficiency in languages such as SQL, Java, Laravel, and React JS. ",
+    linkedIn:"https://www.linkedin.com/in/eyouel-ayalew-kenfu/",
+    github:"https://github.com/yosef-seboka",
+    location:"Ireland"
+  },
+  {
+    name:"Beka Haile",
+    imageSrc:beka,
+    title:"Advisor | Software Engineer",
+    roleDescription:"Experienced Software Engineer with a demonstrated history of working in the IT and services industry. Skilled in Flutter, React Js, Java, Android Development, web development and CI/CD.",
+    linkedIn:"https://www.linkedin.com/in/beka-haile-589793195/",
+    github:"https://github.com/BekaHaile",
+    location:"UAE"
   },
   {
     name:"Firaol Dida",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
+    imageSrc:firaol,
+    title:"Advisor | Software Engineer",
+    roleDescription:"Results-oriented full stack developer with 5+ years of experience, holding a degree in Computer Science and a Master's in Bioinformatics. With a proven track record of success in software development.",
+    linkedIn:"https://www.linkedin.com/in/firaol-dida-150278156/",
+    github:"https://github.com/yosef-seboka",
+    upwork:"https://www.upwork.com/freelancers/~01ccb2d02064d3492d?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01ccb2d02064d3492d%2Fprofile",
+    location:"Ethiopia"
   },
   {
-    name:"Eyuel Ayalew",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
-  },
-  {
-    name:"Beka Hayle",
-    imageSrc:"https://avatars.githubusercontent.com/u/74524490?v=4",
-    title:"Principal Software Engineer",
-    "roleDescription":"The dude has 4 years of  years experience in donkey riding Lorem ipsum  adipisicing elit. Atque consequatur debitis delectus eius error eum ex libero magnam similique sit.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"http://github.com/yosef-seboka",
-    "twitter":"https://twitter.com/YosefSeboka"
+    name:"Haben Amare",
+    imageSrc:haben,
+    title:"Advisor | Software Engineer",
+    roleDescription:"An accomplished senior software engineer, leading and mentoring teams, driving excellence, growth, and innovation with a proven track record of success.",
+    linkedIn:"https://www.linkedin.com/in/haben/",
+    github:"https://github.com/habenamare",
+    location:"Portugal"
   },
 ]
-
 </script>

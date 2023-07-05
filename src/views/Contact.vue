@@ -171,14 +171,8 @@ function validateForm() {
 
 
 function submitForm() {
-  const contactMessage =  new FormData()
-  contactMessage.append('name',formData.value.name)
-  contactMessage.append('email',formData.value.email)
-  contactMessage.append('phone_no',formData.value.phone_no)
-  contactMessage.append('content',formData.value.content)
-
   if (validateForm()) {
-    axios.post('http://127.0.0.1:8000/api/add-message',contactMessage)
+    axios.post(`https://api.telegram.org/bot${import.meta.env.VITE_TOKEN}/sendMessage?chat_id=${import.meta.env.VITE_CHATID}&text=Name: ${formData.value.name}%0AEmail: ${formData.value.email}%0A%0A${formData.value.content}%0APhone: ${formData.value.phone_no}%0A`)
         .then(r => {
           response.value = r.data
           showNotification.value = true
