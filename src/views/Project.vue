@@ -49,7 +49,7 @@
               class="flex h-12 justify-left w-fit"
           >
             <span
-                class="relative text-base font-semibold text-green-50 hover:underline">More</span
+                class="relative text-base font-semibold  hover:underline">More</span
             >
           </a>
         </div>
@@ -63,12 +63,13 @@
 <script setup>
 import AOS from "aos";
 import {onMounted, ref} from "vue";
-import ankeboot from "../assets/projects/ankeboot.jpg";
-import testRigel2 from "../assets/projects/testRigel2.png"
+import ankeboot from "../assets/projects/ankeboot.png";
+import testRigel2 from "../assets/projects/rigel.png"
 import tutor from "../assets/projects/tutor.png"
 import betPlus from "../assets/projects/betPlus.png";
 import anbessa from "../assets/projects/anbessa-desktop.png";
-import gebeta from "../assets/projects/gebeta1.png"
+import fotbol from '../assets/projects/futbol.png';
+import gebeta from "../assets/projects/gebeta1.png";
 onMounted(() => {
   AOS.init({
     duration: 1600,
@@ -123,6 +124,15 @@ const projects = [
   },
   {
     id:6,
+    name:"FutBol ",
+    theme:"white",
+    category:"Web app",
+    description:"Premier source for the latest and most comprehensive updates on sports from all corners of the world. FutBol offers an exciting opportunity for advertisers to showcase their brands and reach sports enthusiasts worldwide.",
+    ImageSrc:fotbol,
+    link:"#projects"
+  },
+  {
+    id:7,
     name:"Gebeta app",
     theme:"yellow",
     category:"Mobile app",
@@ -147,33 +157,29 @@ function activeProject(index){
 
 <style scoped>
 .purple{
-  @apply bg-purple-600;
-  @apply text-purple-50
+  @apply bg-purple-600 text-purple-50
 }
 .gray{
-  @apply bg-gray-700;
-  @apply text-gray-50
+  @apply bg-gray-700 text-gray-50
 }
 .red{
-  @apply bg-red-600;
-  @apply text-red-50
+  @apply bg-red-600 text-red-50
 }
 .green{
-  @apply bg-green-700;
-  @apply text-green-50
+  @apply bg-green-700 text-green-50
 
 }
 .orange{
-  @apply bg-orange-700;
-  @apply text-orange-100
+  @apply bg-orange-700 text-orange-100
 }
 .blue{
-   @apply bg-blue-700;
-  @apply text-blue-50
+  @apply bg-blue-700 text-blue-50
+}
+.white{
+   @apply bg-white text-gray-700
  }
 .yellow{
   @apply bg-yellow-600 text-yellow-50
-
 }
 @keyframes bounce-once {
   0% {
@@ -194,6 +200,7 @@ function activeProject(index){
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
+
 
 /* Customize scrollbar styles */
 ::-webkit-scrollbar {
