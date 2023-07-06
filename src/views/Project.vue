@@ -26,7 +26,7 @@
           <img
               :src="currentProject.ImageSrc"
               :alt="currentProject.name"
-              loading="lazy"
+              loading="eager"
               class="md:h-[30rem] h-[20rem] w-[40rem] object-contain z-10"
               :class="{'animate-bounce animate-once': animateImage}"
           />
@@ -108,7 +108,7 @@ const projects = [
     name:"Bet+ Sports Betting",
     theme:"blue",
     category:"Web app",
-    description:"A screenshot is a digital image that shows the contents of a computer display. A screenshot is created by the operating system or software running on the device powering the display. Additionally, screenshots can be captured by an",
+    description:"The ultimate sports betting platform that revolutionizes the way you connect with your favorite sports games and place your bets, all through a seamless web app experience. Designed to cater to sports enthusiasts and avid bettors, Offers a comprehensive suite of features that enhance the sports betting journey.",
     ImageSrc:betPlus,
     link:"#projects"
   },
@@ -117,7 +117,7 @@ const projects = [
     name:"Anbessa Sports Betting",
     theme:"red",
     category:"Web app",
-    description:"Anbessa Sport betting app allows to connect to your favorite sports game and place your bets via mobile apps. It also has Sign up Process, User Management, Collating Information and Inputs from Bookies, Management of Payment and Prize along with Content.",
+    description:"Anbessa Sport betting app allows to connect to your favorite sports game and place your bets via web and mobile apps. It also has Sign up Process, User Management, Collating Information and Inputs from Bookies, Management of Payment and Prize along with Content.",
     ImageSrc:anbessa,
     link:"#projects"
   },
