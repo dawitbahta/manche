@@ -63,7 +63,6 @@ import adil from "../assets/teams/adil.jpeg";
 import beka from "../assets/teams/bekaHaile.jpeg";
 import yosef from "../assets/teams/yosefSeboka.jpeg";
 import biniyam from "../assets/teams/biniyamLemma.jpeg";
-import kalid from '../assets/teams/kalidAbdu.jpeg';
 import eyouel from '../assets/teams/eyouelKenfu.jpeg';
 import firaol from '../assets/teams/firaolDida.jpeg';
 import bereket from '../assets/teams/bereketGobeze.jpeg';
@@ -107,10 +106,10 @@ const teamMembers = [
 
   },
   {
-    imageSrc:kalid,
+    imageSrc:placeHolder,
     name:"Kalid Abdu",
-    title:"Senior Developer | Board Member | CTO",
-    roleDescription:"Possess 5+ years of programming and software development experience, having contributed to internationally recognized and renowned projects.",
+    title:"CTO | Board Member | Technical Advisor",
+    roleDescription:"Former Anbessa CTO, now steers our company as the CTO and Project Manager, with 7+ years of diverse programming and project leading experiences." ,
     linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
     github:"https://github.com/Kalid10",
     upwork:"https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
