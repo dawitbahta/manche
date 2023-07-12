@@ -44,14 +44,16 @@
                class="max-w-xl mt-4 text-base tracking-tight font-medium ">{{currentProject.description}}
            </p>
          </span>
-          <a
+          <router-link
+              v-if="currentProject.link"
+              :to="currentProject.link"
               :href="currentProject.link"
-              class="flex h-12 justify-left w-fit"
-          >
-            <span
-                class="relative text-base font-semibold  hover:underline">More</span
-            >
-          </a>
+              class="flex hover:underline h-12 justify-left w-fit"
+          ><span class=" z-50 text-lg text-white font-semibold  flex items-center justify-center">
+            More
+           <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
+          </span>
+          </router-link>
         </div>
       </div>
     </div>
@@ -64,7 +66,7 @@
 import AOS from "aos";
 import {onMounted, ref} from "vue";
 import ankeboot from "../assets/projects/ankeboot.png";
-import testRigel2 from "../assets/projects/rigel.png"
+import rigelSMS from "../assets/projects/rigel.png"
 import tutor from "../assets/projects/tutor.png"
 import betPlus from "../assets/projects/betPlus.png";
 import anbessa from "../assets/projects/anbessa-desktop.png";
@@ -83,8 +85,8 @@ const projects = [
     theme:"purple",
     category:"Web and Mobile app",
     description:"A groundbreaking platform seamlessly integrating AI into classrooms. Experience personalized teaching support and tailored assessments through our AI-Integrated Lesson Plans and Question Generator. Gain real-time insights into student performance with Live Grade Reports and Rankings, while promoting accountability and a holistic view of behavior through Real-Time Absentee Recording and Inclusive Conduct Assessment.",
-    ImageSrc:testRigel2,
-    link:"#projects"
+    ImageSrc:rigelSMS,
+    link:"/SMS"
   },
   {
     id:2,
@@ -93,7 +95,7 @@ const projects = [
     category:"Web app",
     description:"Tutor is a web app that connects students of all ages and academic levels with highly skilled tutors from a wide range of subjects. With its intuitive interface and robust features,  Tutor streamlines the process of finding the perfect tutor for individual learning needs. ",
     ImageSrc:tutor,
-    link:"#"
+
   },
   {
     id:3,
@@ -102,7 +104,7 @@ const projects = [
     category:"Web app",
     description:"Help to manage their inventory, record incoming and outgoings, keep up with daily sales, get aggregate data on transactions, manage company letters and employees.",
     ImageSrc:ankeboot,
-    link:"#projects"
+
   },
   {
     id:4,
@@ -111,7 +113,7 @@ const projects = [
     category:"Web app",
     description:"The ultimate sports betting platform that revolutionizes the way you connect with your favorite sports games and place your bets, all through a seamless web app experience. Designed to cater to sports enthusiasts and avid bettors, Offers a comprehensive suite of features that enhance the sports betting journey.",
     ImageSrc:betPlus,
-    link:"#projects"
+
   },
   {
     id:5,
@@ -120,7 +122,7 @@ const projects = [
     category:"Web app",
     description:"Anbessa Sport betting app allows to connect to your favorite sports game and place your bets via web and mobile apps. It also has Sign up Process, User Management, Collating Information and Inputs from Bookies, Management of Payment and Prize along with Content.",
     ImageSrc:anbessa,
-    link:"#projects"
+
   },
   {
     id:6,
@@ -129,7 +131,7 @@ const projects = [
     category:"Web app",
     description:"Premier source for the latest and most comprehensive updates on sports from all corners of the world. FutBol offers an exciting opportunity for advertisers to showcase their brands and reach sports enthusiasts worldwide.",
     ImageSrc:fotbol,
-    link:"#projects"
+
   },
   {
     id:7,
@@ -138,7 +140,7 @@ const projects = [
     category:"Mobile app",
     description:"This app uses Accessibility services to provide users with a convenient and easy-to-use way to manage their telecoms services. The app allows users to recharge their balance, send call me backs, transfer credit, buy and send Ethio Gebeta packages, view their remaining balance and package amount, and track their expenses.",
     ImageSrc:gebeta,
-    link:"#projects"
+
   },
 ]
 const activeIndex = ref(1)
