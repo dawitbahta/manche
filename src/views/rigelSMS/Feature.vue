@@ -5,10 +5,10 @@
       <div>
         <div class="max-w-2xl">
           <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
-            RIGEL SMS
+            RIGEL
           </p>
           <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
-            A groundbreaking platform seamlessly integrating AI into classrooms. Experience personalized teaching support and tailored assessments through our AI-Integrated Lesson
+            {{rigelDescription}}
           </p>
         </div>
       </div>
@@ -22,7 +22,7 @@
 
                      <div>
                   <div class="flex items-center justify-center w-12 h-12 text-black bg-gray-100 rounded-xl">
-                    {{feature.icon}}
+                   <img :src="feature.icon">
                   </div>
                   <p class="mt-4 text-lg font-medium leading-6 text-black">
                     {{feature.title}}
@@ -95,71 +95,101 @@ import {onMounted, ref} from "vue";
 import RigelDesktop from "../../assets/projects/rigelSMS/rigelSMS.png";
 import RigelMobile from "../../assets/projects/rigelSMS/mobile.png";
 
+import aiIcon from '../../assets/icons/features/ai.svg';
+import attendanceIcon from '../../assets/icons/features/attendance.svg';
+import performanceIcon from '../../assets/icons/features/performance.svg';
+import smartSchedulerIcon from '../../assets/icons/features/schedule.svg';
+import refFlagIcon from '../../assets/icons/features/redFlag.svg';
+import gradeReportIcon from '../../assets/icons/features/gradeReport.svg';
+import customizableIcon from '../../assets/icons/features/customizable.png';
+import languageIcon from '../../assets/icons/features/language.png';
+import dataMgmtIcon from '../../assets/icons/features/dataMgmt.svg';
 onMounted(() => {
   AOS.init({
     duration: 1600,
   });
 })
 
+const rigelDescription = "Rigel is one of Rigel Studio's groundbreaking software products designed to address numerous challenges in the field of education. With a robust set of features and an intuitive user interface, Rigel aims to revolutionize the way we approach learning and teaching."
 const features = [
   {
     id:1,
-    title:"Real Time ",
-    description:"Our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead",
-    icon:"",
+    title:"AI assistance ",
+    description:"AI-powered assistant can help teachers design lesson plans and assessments by providing them with personalized recommendations and suggestions.",
+    icon:aiIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
   {
     id:2,
-    title:"Attendance Mgmt ",
-    description:"Our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead",
-    icon:"",
+    title:"Attendance management ",
+    description:"Real-time attendance tracking and reporting to ensure students are present in class and identify trends over time.",
+    icon:attendanceIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
   {
-    id:2,
+    id:3,
     title:"Performance tracking",
-    description:"Our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead",
-    icon:"",
-    subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
-  },
-
-
-  {
-    id:1,
-    title:"Real Time Grade Report ",
-    description:"Our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead",
-    icon:"",
+    description:"Performance tracking to identify areas for improvement and help to provide personalized support.",
+    icon:performanceIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
   {
-    id:2,
-    title:"AI",
+    id:4,
+    title:"Grade Report ",
     description:"Our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead",
-    icon:"",
+    icon:gradeReportIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
   {
-    id:2,
-    title:"Payment ",
-    description:"Our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead",
-    icon:"",
+    id:5,
+    title:"Smart scheduler",
+    description:"Create class schedules automatically based on multiple parameters provided, such as teacher availability,Subject and classroom capacities and more",
+    icon:smartSchedulerIcon,
+    subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
+  },
+  {
+    id:6,
+    title:"Flagging System",
+    description:"Filters students who are not doing well. such us who are absent frequently, who are failing classes, or who are struggling academically.",
+    icon:refFlagIcon,
+    subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
+  },
+  {
+    id:7,
+    title:"Language ",
+    description:"Accepts multiple languages, including Amharic and English. We are also on track to add additional languages in the near future.",
+    icon:languageIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
 
-
+  {
+    id:8,
+    title:"Data management",
+    description:"Secure data management with backup & security to protect your data.",
+    icon:dataMgmtIcon,
+    subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
+  },
+  {
+    id:9,
+    title:"Customizable",
+    description:"Customizable solution that can help your school overcome challenges and meet the needs of your students.",
+    icon:customizableIcon,
+    subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
+  },
 ]
+
+
 const featureDetails =[
   {
     id:1,
-    title: "Teacher view",
-    description:"A groundbreaking platform seamlessly integrating AI into classrooms. Experience personalized teaching support and tailored assessments through our AI-Integrated Lesson Plans and Question Generator. Gain real-time insights into student performance with Live Grade Reports and Rankings, while promoting accountability and a holistic view of behavior through Real-Time Absentee Recording and Inclusive Conduct Assessment.",
+    title: "Web App",
+    description:"A revolutionary web application that combines a teacher and management portal to streamline education management. Its integrated AI capabilities empower teachers to manage students effectively, create and track lesson plans, and receive personalized assistance. The teacher portal provides easy access to student profiles, attendance records, and progress tracking, while the AI assistant offers valuable insights for personalized instruction. The management portal equips administrators with comprehensive tools for overseeing classes, evaluating student performance, and optimizing educational outcomes.",
     ImageSrc:RigelDesktop,
   },
   {
     id:2,
-    title: "Parent view",
-    description:"A groundbreaking platform seamlessly integrating AI into classrooms. Experience personalized teaching support and tailored assessments through our AI-Integrated Lesson Plans and Question Generator. Gain real-time insights into student performance with Live Grade Reports and Rankings, while promoting accountability and a holistic view of behavior through Real-Time Absentee Recording and Inclusive Conduct Assessment.",
+    title: "Mobile App",
+    description:"An innovative mobile app designed exclusively for parents to seamlessly follow up on their child's academic and ethical performance. With ParentTrack, parents can stay informed and actively engage in their child's educational journey, nurturing both their academic achievements and ethical development.One of the standout features of ParentTrack is its comprehensive ethical performance tracking system. Parents can access reports and assessments that provide valuable insights into their child's character traits, social skills, and ethical decision-making.",
     ImageSrc:RigelMobile,
   }
 ]

@@ -9,7 +9,7 @@
       <div class="flex lg:flex-col lg:h-full lg:w-16 right-0 space-x-3 lg:space-y-4 lg:space-x-0 absolute justify-center  flex-row w-full h-16 bottom-0">
         <button
             v-for="index in projects" @click="activeProject(index)"
-            :class="{'bg-white': activeIndex === index.id}"
+            :class="{'bg-gray-200': activeIndex === index.id}"
             class="w-3 h-3 p-2 rounded-full border-2 hover:bg-green-50 hover:border-green-50">
         </button>
       </div>
@@ -99,7 +99,7 @@ const projects = [
   },
   {
     id:3,
-    name:"Ankeboot Management System",
+    name:"Company Management System",
     theme:"orange",
     category:"Web app",
     description:"Help to manage their inventory, record incoming and outgoings, keep up with daily sales, get aggregate data on transactions, manage company letters and employees.",
