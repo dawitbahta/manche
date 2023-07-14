@@ -1,6 +1,6 @@
 <template>
   <span class="relative">
-  <div class=" fixed top-0 w-full z-30">
+  <div class="fixed top-0 w-full z-30">
     <nav
         class="
         px:8
@@ -19,7 +19,8 @@
         :class="{ 'sm:bg-white text-black shadow-md ': scrolled }"
     >
       <div class="flex items-center justify-between">
-        <a
+        <router-link
+            to="/"
             href="#home"
             class="
           w-fit
@@ -33,7 +34,7 @@
         >
           Rigel
 
-      </a>
+      </router-link>
         <!-- Mobile menu button -->
         <div @click="showNavBar = !showNavBar, showMenu = false" class="flex md:hidden">
           <button
@@ -72,18 +73,19 @@
           md:bg-transparent
         "
       >
-        <a v-for="(section,index) in sections" :key="index"
+        <a v-if="!isOnSubRoute" v-for="(section,index) in sections" :key="index"
            :href="section.linkId"
             class="text-md hover:border-b-2 text-gray-400 hover:border-green-500 hover:font-bold uppercase"
-            :class="{ 'text-black ': scrolled,  }"
-
-            @click="showNavBar = false"
+            :class="{ 'text-black ': scrolled }"
+             @click="scrollToSection($event, section.linkId)"
         >
           {{ section.name }}
         </a>
 
+        <a v-if="isOnSubRoute" href="#contact" class="uppercase hover:text-purple-500" @click="showNavBar = false">
 
-
+          Contact
+        </a>
       </ul>
 
 
@@ -93,19 +95,38 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
-// import axios from "axios";
+import {ref, watch} from "vue";
+import {useRouter} from "vue-router";
 const sections = [
   {name:'Home',linkId:'#home'},
   {name:'About',linkId:'#about'},
   {name:'Projects',linkId:'#projects'},
   {name:'Contact',linkId:'#contact'},
-
 ]
+const route = useRouter().currentRoute;
+const isOnSubRoute = ref(false);
+const subRoute = '/SMS';
+
+watch(
+    () => route.value.path,
+    (newPath) => {
+      isOnSubRoute.value = newPath == subRoute;
+    }
+);
 
 const showNavBar = ref(false)
 const showMenu = ref(false);
 const scrolled = ref(false);
+
+function scrollToSection(event, linkId) {
+  event.preventDefault();
+  const targetElement = document.querySelector(linkId);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+  showNavBar.value = false
+}
+
 
 window.addEventListener("scroll", () => {
   scrolled.value = window.scrollY > 0;
