@@ -2,13 +2,13 @@
   <section class="items-center justify-center bg-[#0F0F0F] flex h-screen">
     <img class="h-full w-full absolute" src="../assets/shapes/shape-16.svg" alt="Bg Shape" />
 
-    <div class="relative items-center h-full w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
+    <div class="relative items-center h-full w-full px-2 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
       <div class="max-w-4xl mx-auto  flex flex-col justify-evenly h-full text-center">
-        <div class="flex flex-col space-y-10"
+        <div class="flex flex-col space-y-10 w-full justify-center"
         >
-          <div class="font-semibold text-7xl lg:text-8xl text-green-50 lowercase">Rigel.<span class="text-primary">Studio
+          <div class="font-semibold  text-6xl lg:text-8xl text-green-50 lowercase">Rigel.<span class="text-primary">Studio
           </span></div>
-          <p class="mt-8 text-2xl font-semibold  text-yellow-50 lg:text-5xl w-full ">
+          <p class="mt-8 text-xl font-semibold  text-yellow-50 lg:text-5xl w-full ">
             <span
                 data-aos="fade-right"
                 >
@@ -16,7 +16,7 @@
             </span>
             <span class="md:block" data-aos="fade-out">With Technology for Everyone</span>
           </p>
-          <p class="max-w-xl mx-auto mt-8 text-base text-sm lg:text-xl text-yellow-50">
+          <p class="max-w-xl mx-auto mt-8 text-xs lg:text-xl px-5 text-yellow-50">
             We are a software and services company that uses advanced technologies, data, and AI to help businesses transform and grow.
           </p>
         </div>
