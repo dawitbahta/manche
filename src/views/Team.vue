@@ -3,7 +3,7 @@
       <div class="bg-gray-100 flex justify-center mx-auto pt-16">
         <div>
           <p class="text-green-500 text-md text-center font-bold pb-3">BUILDING TEAM</p>
-          <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">The Talented People Behind the Scenes of the Organization</h1>
+          <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-bold pb-6 sm:w-full w-5/6 mx-auto">The Talent Behind the Scenes</h1>
         </div>
       </div>
       <div class="w-full pt-10 bg-gray-100">
@@ -78,22 +78,22 @@ const teamMembers = [
   {
     imageSrc:adil,
     name:"Adil Abdu",
-    title:"Senior Developer | Board Member | CFO",
-    roleDescription:"Lead author on an IEEE Access publication on unsupervised machine learning algorithms, involved in internationally nominated projects.",
+    title:"CEO | Board Member | Technical Advisor",
+    roleDescription:"Our CEO is the lead author on an IEEE Access publication on unsupervised machine learning algorithms, involved in internationally nominated projects.",
     linkedIn:"http://www.linkedin.com/in/yosefseboka",
     github:"https://github.com/adilabdu",
     upwork:"https://www.upwork.com/freelancers/~012639c223643a15e8",
     location:"Ethiopia"
   },
   {
-    imageSrc:yosef,
-    name:"Yosef Seboka ",
-    title:"Analytics Lead | Board Member | Developer",
-    roleDescription:"Analyst with a strong engineering background adeptly devises innovative approaches to drive growth and enhance operational efficiency.",
-    linkedIn:"https://www.linkedin.com/in/yosefseboka",
-    github:"https://github.com/yosef-seboka",
+    imageSrc:placeHolder,
+    name:"Kalid Abdu",
+    title:"CTO | Board Member | Technical Advisor",
+    roleDescription:"With over 7+ years of experience in programming, leadership, and serving as CTO, Kalid guides our company as Chief Technology Officer and Project Manager." ,
+    linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
+    github:"https://github.com/Kalid10",
+    upwork:"https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
     location:"Ethiopia"
-
   },
   {
     imageSrc:biniyam,
@@ -106,16 +106,18 @@ const teamMembers = [
 
   },
   {
-    imageSrc:placeHolder,
-    name:"Kalid Abdu",
-    title:"CTO | Board Member | Technical Advisor",
-    roleDescription:"Former Anbessa CTO, now steers our company as the CTO and Project Manager, with 7+ years of diverse programming and project leading experiences." ,
-    linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
-    github:"https://github.com/Kalid10",
-    upwork:"https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
+    imageSrc:yosef,
+    name:"Yosef Seboka ",
+    title:"Analytics Lead | Board Member | Developer",
+    roleDescription:"An analyst with a strong engineering background adeptly devises innovative approaches to drive growth and enhance operational efficiency.",
+    linkedIn:"https://www.linkedin.com/in/yosefseboka",
+    github:"https://github.com/yosef-seboka",
     location:"Ethiopia"
 
-  },  {
+  },
+
+
+  {
     name:"Banchialem Maru",
     imageSrc:placeHolder,
     title:"Board Member | Strategic Advisor | Investor ",
@@ -139,6 +141,15 @@ const teamMembers = [
     location:"Ethiopia"
   },
   {
+    name:"Haben Amare",
+    imageSrc:haben,
+    title:"Advisor | Senior Software Engineer",
+    roleDescription:"Haben is an accomplished senior software engineer, leading teams and nurturing innovation. His expertise boosts the company's growth and drives us towards success.",
+    linkedIn:"https://www.linkedin.com/in/haben/",
+    github:"https://github.com/habenamare",
+    location:"Portugal"
+  },
+  {
     name:"Eyouel Kenfu ",
     imageSrc:eyouel,
     title:"Advisor | Software Engineer",
@@ -147,6 +158,7 @@ const teamMembers = [
     github:"https://github.com/yosef-seboka",
     location:"Ireland"
   },
+
   {
     name:"Beka Haile",
     imageSrc:beka,
@@ -166,14 +178,6 @@ const teamMembers = [
     upwork:"https://www.upwork.com/freelancers/~01ccb2d02064d3492d?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01ccb2d02064d3492d%2Fprofile",
     location:"Ethiopia"
   },
-  {
-    name:"Haben Amare",
-    imageSrc:haben,
-    title:"Advisor | Software Engineer",
-    roleDescription:"An accomplished senior software engineer, leading and mentoring teams, driving excellence, growth, and innovation with a proven track record of success.",
-    linkedIn:"https://www.linkedin.com/in/haben/",
-    github:"https://github.com/habenamare",
-    location:"Portugal"
-  },
+
 ]
 </script>

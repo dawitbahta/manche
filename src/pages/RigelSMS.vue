@@ -5,9 +5,9 @@
 </template>
 
 <script setup>
-import Hero from '../views/rigelSMS/Hero.vue';
-import Feature from '../views/rigelSMS/Feature.vue';
-import Contact from "../views/rigelSMS//Contact.vue";
+import Hero from '../views/SMS/Hero.vue';
+import Feature from '../views/SMS/Feature.vue';
+import Contact from "../views/SMS//Contact.vue";
 </script>
 <style scoped>
 </style>

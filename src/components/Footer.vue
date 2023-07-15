@@ -4,8 +4,8 @@
       <p class="mt-8 text-center">
             <span class="mx-auto mt-2 text-sm text-gray-500">
               Developed by
-               <span class="text-green-500">
-                    Rigel Studio
+               <span class="text-black">
+                    rigel.<span class="text-primary">studio</span>
               </span> <br>
               Copyright © {{copyrightDate}}
             </span>

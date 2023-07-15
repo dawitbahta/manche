@@ -16,7 +16,8 @@
         bg-white
         sm:bg-transparent
               "
-        :class="{ 'sm:bg-white text-black shadow-md ': scrolled }"
+        :class="navBarStyle"
+
     >
       <div class="flex items-center justify-between">
         <router-link
@@ -28,11 +29,11 @@
           font-bold
           ml-10
           rounded-md
-          uppercase
+          lowercase
           "
-            :class="{ ' text-gray-400 ': scrolled }"
+            :class="{ ' text-gray-800 ': scrolled }"
         >
-          Rigel
+          rigel. <span class="text-[#F6BA1E]">studio</span>
 
       </router-link>
         <!-- Mobile menu button -->
@@ -75,8 +76,8 @@
       >
         <a v-if="!isOnSubRoute" v-for="(section,index) in sections" :key="index"
            :href="section.linkId"
-            class="text-md hover:border-b-2 text-gray-400 hover:border-green-500 hover:font-bold uppercase"
-            :class="{ 'text-black ': scrolled }"
+            class="text-md hover:border-b-2  hover:border-green-500 hover:font-bold uppercase"
+            :class="navBarTextStyle"
              @click="scrollToSection($event, section.linkId)"
         >
           {{ section.name }}
@@ -127,9 +128,21 @@ function scrollToSection(event, linkId) {
   showNavBar.value = false
 }
 
-
+const navBarStyle = ref('bg-transparent');
+const navBarTextStyle = ref('text-white');
 window.addEventListener("scroll", () => {
-  scrolled.value = window.scrollY > 0;
+  switch (true) {
+    case window.scrollY <1000:
+
+      navBarStyle.value = 'bg-transparent';
+      navBarTextStyle.value = 'text-white';
+      break;
+
+    default:
+      navBarStyle.value = 'bg-white';
+  navBarTextStyle.value = 'text-black';
+      break;
+  }
 });
 </script>
 

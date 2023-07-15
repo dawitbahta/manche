@@ -3,15 +3,18 @@
     <div class="relative items-center w-full px-5 py-12 mx-auto max-w-7xl lg:px-16 lg:py-32 md:px-12">
       <div>
         <div class="relative text-center">
-          <p class="mt-8 text-3xl font-extrabold tracking-tighter text-black md:text-6xl">
-            RIGEL <span class="md:block">School management system</span>
+          <p class="mt-8 text-3xl font-bold text-purple-500 md:text-6xl">
+            RIGEL <span class="md:block text-black font-bold">School management system</span>
           </p>
           <p class="max-w-xl mx-auto mt-4 text-sm text-slate-600">
             A groundbreaking platform seamlessly integrating AI into classrooms. Experience personalized teaching support and tailored assessments through our AI-Integrated Lesson Plans and Question Generator.
           </p>
         </div>
       </div>
-      <div class="relative items-center w-full py-12 pb-12 mx-auto mt-12 max-w-7xl">
+      <div class="flex flex-col justify-center w-10/12 gap-3 mx-auto mt-10 sm:flex-row">
+        <a href="#contact" class=" focus:outline-none inline-flex items-center justify-center z-50 rounded-3xl bg-purple-500 duration-200 focus-visible:outline-black focus-visible:ring-black font-medium  border border-purple-500 text-purple-100 hover:border-purple-500 lg:w-4/12 px-6 py-3 text-center w-8/12">Request Demo</a>
+      </div>
+      <div class="relative items-center w-full  pb-12 z-10 mx-auto mt-5 max-w-7xl">
         <svg fill="none" viewBox="0 0 400 400" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" class="absolute -mt-24 blur-3xl">
           <g clip-path="url(#clip0_10_20)">
             <g filter="url(#filter0_f_10_20)">
@@ -31,9 +34,7 @@
         </svg>
         <img class="relative object-cover w-full rounded " alt="rigel-screenshot" src="../../assets/projects/rigelSMS/rigelSMS.png">
       </div>
-      <div class="flex flex-col justify-center max-w-sm gap-3 mx-auto mt-10 sm:flex-row">
-        <a href="#contact" class=" focus:outline-none inline-flex items-center justify-center rounded-xl bg-purple-500 duration-200 focus-visible:outline-black focus-visible:ring-black font-medium  border border-purple-500 text-white hover:border-purple-500  lg:w-auto px-6 py-3 text-center w-full">Request Demo</a>
-      </div>
+
     </div>
   </section>
 </template>
