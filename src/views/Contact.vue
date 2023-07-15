@@ -6,7 +6,7 @@
         <div class="lg:col-span-2 lg:py-12">
 
           <div class="py-6 md:py-0 md:px-6">
-            <h1 class="text-4xl font-bold">Get in <span class="border-b-4 border-green-500 cursor-pointer">Touch</span></h1>
+            <h1 class="text-4xl font-bold">Get in <span class="border-b-4 border-primary cursor-pointer">Touch</span></h1>
             <p class="pt-2 pb-4">Contact us today. Let's connect and discuss how we can assist you. Get in touch now!</p>
 
           <ContactInfo></ContactInfo>
@@ -69,7 +69,7 @@
             <div class="mt-4">
               <button
                   type="submit"
-                  class="shadow-md font-medium my-5 py-2 px-4 text-white cursor-pointer bg-green-500 hover:bg-green-600 rounded text-lg text-center w-32"
+                  class="shadow-md font-medium my-5 py-2 px-4 text-white cursor-pointer bg-primary hover:bg-green-600 rounded text-lg text-center w-32"
               >
                 Send
               </button>

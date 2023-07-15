@@ -2,7 +2,7 @@
 
       <div class="bg-gray-100 flex justify-center mx-auto pt-16">
         <div>
-          <p class="text-green-500 text-md text-center font-bold pb-3">BUILDING TEAM</p>
+          <p class="text-primary text-md text-center font-bold pb-3">BUILDING TEAM</p>
           <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-bold pb-6 sm:w-full w-5/6 mx-auto">The Talent Behind the Scenes</h1>
         </div>
       </div>
