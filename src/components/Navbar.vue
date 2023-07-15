@@ -13,7 +13,7 @@
         font-semibold
         text-gray-400
         transition-all duration-500
-        bg-white
+
         sm:bg-transparent
               "
         :class="navBarStyle"
@@ -41,14 +41,14 @@
           <button
 
               type="button"
-              :class="{ ' text-black': scrolled }"
               class="
             pr-4
-              text-gray-900
+              text-white
               hover:text-white
+              fill-gray-400
             "
           >
-            <svg viewBox="0 0 24 24" class="w-6 h-6 ">
+            <svg  viewBox="0 0 24 24" class="w-6 h-6 ">
               <path
                   fill-rule="evenodd"
                   d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
