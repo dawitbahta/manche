@@ -132,9 +132,9 @@ const navBarStyle = ref('bg-transparent');
 const navBarTextStyle = ref('text-white');
 window.addEventListener("scroll", () => {
   switch (true) {
-    case window.scrollY <1000:
+    case window.scrollY <800:
 
-      navBarStyle.value = 'bg-transparent';
+      navBarStyle.value = 'bg-transparent z-50';
       navBarTextStyle.value = 'text-white';
       break;
 
