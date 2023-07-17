@@ -3,8 +3,8 @@
     <router-view></router-view>
     <Hero id="home" ref="home"></Hero>
     <About id="about" ref="about"></About>
-    <Team data-aos="fade-up" ref="team"></Team>
     <Project id="projects" ref="projects"></Project>
+    <Team data-aos="fade-up" ref="team"></Team>
     <Contact data-aos="fade-up" id="contact" ref="contact"></Contact>
   </main>
 </template>

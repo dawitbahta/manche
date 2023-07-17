@@ -12,7 +12,7 @@
             <span
                 data-aos="fade-right"
                 >
-           Shaping Ethiopia's Tomorrow, Today
+           Shaping Ethiopia's Tomorrow, <Today></Today>
             </span>
             <span class="md:block" data-aos="fade-out">With Technology for Everyone</span>
           </p>

@@ -29,7 +29,7 @@
                 </div>
               </div>
               <div class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
-                <a href="#contact" class="items-center justify-center w-full px-6 py-2.5 text-center duration-200 bg-green-500 rounded-full inline-flex hover:bg-green-500 bg-transparent border-2 text-green-500 border-green-500 hover:text-white font-medium focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+                <a href="#contact" class="items-center justify-center w-full px-6 py-2.5 text-center duration-200 rounded-full inline-flex bg-primary  border-2 text-white border-primary hover:text-white font-medium focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
                   Contact
                 </a>
               </div>

@@ -15,7 +15,7 @@
       </div>
     </div>
     <div :class="currentProject.theme">
-      <h1 class="xl:text-4xl flex justify-center w-full text-3xl text-center text-white font-extrabold pt-6 uppercase">Projects</h1>
+      <h1 class="xl:text-4xl flex justify-center w-full text-3xl text-center text-white font-extrabold pt-6 uppercase">Our Projects</h1>
       <div
         class="xl:container  m-auto px-4 md:px-12 xl:px-16">
       <div
