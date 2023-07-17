@@ -48,9 +48,9 @@
               v-if="currentProject.link"
               :to="currentProject.link"
               :href="currentProject.link"
-              class="flex hover:underline h-12 justify-left w-fit"
-          ><span class=" z-50 text-lg text-white font-semibold  flex items-center justify-center">
-            More
+              class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-fit"
+          ><span class=" z-50 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
+            MORE
            <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
           </span>
           </router-link>
