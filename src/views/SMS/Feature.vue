@@ -1,22 +1,22 @@
 <template>
 <!-- feature-->
   <section class="bg-gray-50">
-    <div class="relative items-center w-full px-5 pt-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
+    <div class="relative items-center w-full px-5 lg:pt-24 pt-5 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
       <div>
         <div class="max-w-2xl">
-          <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+          <p class="text-2xl font-bold tracking-tight text-purple-500 sm:text-4xl">
             RIGEL
           </p>
-          <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
+          <p class="max-w-2xl lg:mt-4 mt-2 text-sm lg:text-sm font-light tracking-tight text-gray-500">
             {{rigelDescription}}
           </p>
         </div>
       </div>
       <div class="">
-        <div class="max-w-xl py-12 mx-auto text-left lg:max-w-7xl">
+        <div class="max-w-xl lg:py-12 py-8 mx-auto text-left lg:max-w-7xl">
           <h2 class="sr-only">Features.</h2>
           <div>
-            <div class="grid grid-cols-2 gap-12 lg:grid-cols-3 lg:space-y-0">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:space-y-0">
               <div v-for="(feature, index) in features" :key="index" >
               <div data-aos="fade-right">
 
@@ -76,7 +76,7 @@
           <div class="md:7/12 lg:w-1/2 h-fit pt-6 md:pt-6 text-white">
           <span class="z-10">
            <p
-               class="text-3xl tracking-tight  font-bold sm:text-5xl">{{currentFeature.title }}
+               class="text-3xl tracking-tight font-bold sm:text-5xl">{{currentFeature.title }}
            </p>
            <p
                class="max-w-xl mt-4 text-base tracking-tight font-medium ">{{currentFeature.description}}
@@ -114,21 +114,21 @@ const rigelDescription = "Rigel is one of Rigel Studio's groundbreaking software
 const features = [
   {
     id:1,
-    title:"AI assistance ",
-    description:"AI-powered assistant can help teachers design lesson plans and assessments by providing them with personalized recommendations and suggestions.",
+    title:"AI-powered Learning",
+    description:"Learning, transformed. Our AI assistant empowers educators with data-driven insights and tools to unlock each student's potential.",
     icon:aiIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
   {
     id:2,
-    title:"Attendance management ",
+    title:"Attendance Management ",
     description:"Real-time attendance tracking and reporting to ensure students are present in class and identify trends over time.",
     icon:attendanceIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
   {
     id:3,
-    title:"Performance tracking",
+    title:"Performance Tracking",
     description:"Performance tracking to identify areas for improvement and help to provide personalized support.",
     icon:performanceIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
@@ -142,7 +142,7 @@ const features = [
   },
   {
     id:5,
-    title:"Smart scheduler",
+    title:"Smart Scheduler",
     description:"Create class schedules automatically based on multiple parameters provided, such as teacher availability,Subject and classroom capacities and more",
     icon:smartSchedulerIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
@@ -156,7 +156,7 @@ const features = [
   },
   {
     id:7,
-    title:"Language ",
+    title:"Language",
     description:"Accepts multiple languages, including Amharic and English. We are also on track to add additional languages in the near future.",
     icon:languageIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
@@ -164,7 +164,7 @@ const features = [
 
   {
     id:8,
-    title:"Data management",
+    title:"Data Management",
     description:"Secure data management with backup & security to protect your data.",
     icon:dataMgmtIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]

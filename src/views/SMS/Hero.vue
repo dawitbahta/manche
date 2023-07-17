@@ -11,8 +11,8 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col justify-center w-10/12 gap-3 mx-auto mt-10 sm:flex-row">
-        <a href="#contact" class=" focus:outline-none inline-flex items-center justify-center z-50 rounded-3xl bg-purple-500 duration-200 focus-visible:outline-black focus-visible:ring-black font-medium  border border-purple-500 text-purple-100 hover:border-purple-500 lg:w-4/12 px-6 py-3 text-center w-8/12">Request Demo</a>
+      <div class="flex flex-col justify-center items-center w-10/12 gap-3 mx-auto mt-10 sm:flex-row">
+        <a href="#contact" class=" focus:outline-none inline-flex items-center justify-center z-50 rounded-3xl bg-purple-500 duration-200 focus-visible:outline-black focus-visible:ring-black font-medium  border border-purple-500 text-purple-100 hover:border-purple-500 lg:w-4/12 px-6 lg:py-3 py-2 text-center w-10/12">Request Demo</a>
       </div>
       <div class="relative items-center w-full  pb-12 z-10 mx-auto mt-5 max-w-7xl">
         <svg fill="none" viewBox="0 0 400 400" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" class="absolute -mt-24 blur-3xl">
