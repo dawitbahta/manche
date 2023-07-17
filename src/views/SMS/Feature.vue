@@ -58,12 +58,12 @@
     </div>
     <div :class="currentFeature.theme">
       <div
-          class="xl:container  m-auto px-4 md:px-12 xl:px-16">
+          class="xl:container m-auto px-4 md:px-12 xl:px-16">
         <div
             class="h-screen md:flex md:gap-6 md:items-center justify-center md:space-y-0 lg:items-center">
 
           <div
-              class="md:5/12 lg:w-1/2 sm:items-center flex justify-center py-10 md:py-0 ">
+              class="md:5/12 lg:w-1/2 sm:items-center flex justify-center py-5 md:py-0 ">
             <img
                 :src="currentFeature.ImageSrc"
                 :alt="currentFeature.name"
@@ -73,7 +73,7 @@
             />
           </div>
 
-          <div class="md:7/12 lg:w-1/2 h-fit pt-6 md:pt-6 text-white">
+          <div class="md:7/12 lg:w-1/2 h-fit pt-6  md:pt-6 text-white">
           <span class="z-10">
            <p
                class="text-3xl tracking-tight font-bold sm:text-5xl">{{currentFeature.title }}
@@ -183,16 +183,16 @@ const featureDetails =[
   {
     id:1,
     title: "Web App",
-    description:"A revolutionary web application that combines a teacher and management portal to streamline education management. Its integrated AI capabilities empower teachers to manage students effectively, create and track lesson plans, and receive personalized assistance. The teacher portal provides easy access to student profiles, attendance records, and progress tracking, while the AI assistant offers valuable insights for personalized instruction. The management portal equips administrators with comprehensive tools for overseeing classes, evaluating student performance, and optimizing educational outcomes.",
+    description:"Experience a revolutionary web application that merges an intuitive teacher portal with effective management tools. Enhance educational management with integrated AI that facilitates student management, lesson plan creation, and personalized support. Access student profiles, track attendance, and monitor progress seamlessly. Our AI assistant further provides valuable insights for personalized learning. The management portal serves as a comprehensive tool for overseeing classes, evaluating student performance, and optimizing educational outcomes.",
     ImageSrc:RigelDesktop,
-  },
-  {
+  },{
     id:2,
     title: "Mobile App",
-    description:"An innovative mobile app designed exclusively for parents to seamlessly follow up on their child's academic and ethical performance. With ParentTrack, parents can stay informed and actively engage in their child's educational journey, nurturing both their academic achievements and ethical development.One of the standout features of ParentTrack is its comprehensive ethical performance tracking system. Parents can access reports and assessments that provide valuable insights into their child's character traits, social skills, and ethical decision-making.",
+    description:"Introducing Rigel's mobile app, crafted specifically for the Ethiopian community, empowers parents to actively participate in their child's academic and ethical growth. With our standout feature, the Ethical-Academical Performance Tracking system, gain deep insights into your child's character traits and social skills. Real-time class attendance updates, assessments, and announcements are at your fingertips, with Rigel, you're not just keeping pace with your child's growth, you're actively sculpting their path to success, fostering the leaders of tomorrow.",
     ImageSrc:RigelMobile,
   }
 ]
+
 
 const activeIndex = ref(1)
 const animateImage = ref(false)

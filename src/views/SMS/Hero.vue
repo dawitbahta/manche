@@ -7,8 +7,7 @@
             RIGEL <span class="md:block text-black font-bold">School management system</span>
           </p>
           <p class="max-w-xl mx-auto mt-4 text-sm text-slate-600">
-            A groundbreaking platform seamlessly integrating AI into classrooms. Experience personalized teaching support and tailored assessments through our AI-Integrated Lesson Plans and Question Generator.
-          </p>
+            Experience innovation with our dynamic school management platform, tailored for the Ethiopian community. Using AI-assisted support, reshape your educational journey. Together, let's inspire and redefine learning.  </p>
         </div>
       </div>
       <div class="flex flex-col justify-center items-center w-10/12 gap-3 mx-auto mt-10 sm:flex-row">
