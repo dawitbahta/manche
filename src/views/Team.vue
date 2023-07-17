@@ -78,7 +78,7 @@ const teamMembers = [
   {
     imageSrc:adil,
     name:"Adil Abdu",
-    title:"CEO | Board Member | Technical Advisor",
+    title:"CEO | Board Member | Technical Lead",
     roleDescription:"Our CEO is the lead author on an IEEE Access publication on unsupervised machine learning algorithms, involved in internationally nominated projects.",
     linkedIn:"http://www.linkedin.com/in/yosefseboka",
     github:"https://github.com/adilabdu",
@@ -88,7 +88,7 @@ const teamMembers = [
   {
     imageSrc:placeHolder,
     name:"Kalid Abdu",
-    title:"CTO | Board Member | Technical Advisor",
+    title:"CTO | Board Member | Project Manager",
     roleDescription:"With over 7+ years of experience in programming, leadership, and serving as CTO, Kalid guides our company as Chief Technology Officer and Project Manager." ,
     linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
     github:"https://github.com/Kalid10",
@@ -116,7 +116,6 @@ const teamMembers = [
 
   },
 
-
   {
     name:"Banchialem Maru",
     imageSrc:placeHolder,
@@ -134,7 +133,7 @@ const teamMembers = [
   {
     name:"Bereket Gobeze",
     imageSrc:bereket,
-    title:"Advisor | Senior Software Engineer",
+    title:"Senior Software Engineer | Technical and Strategic Advisor",
     roleDescription:"An accomplished senior software engineer and former CTO, now an advisor and senior software engineer at our company, driving technological excellence and strategic growth.",
     linkedIn:"https://www.linkedin.com/in/bereket-gobeze/",
     github:"https://github.com/bereketnyb",
@@ -143,7 +142,7 @@ const teamMembers = [
   {
     name:"Haben Amare",
     imageSrc:haben,
-    title:"Advisor | Senior Software Engineer",
+    title:"Senior Software Engineer | Technical Advisor",
     roleDescription:"Haben is an accomplished senior software engineer, leading teams and nurturing innovation. His expertise boosts the company's growth and drives us towards success.",
     linkedIn:"https://www.linkedin.com/in/haben/",
     github:"https://github.com/habenamare",
@@ -162,16 +161,16 @@ const teamMembers = [
   {
     name:"Beka Haile",
     imageSrc:beka,
-    title:"Advisor | Software Engineer",
+    title:" Backend Developer | Technical Advisor ",
     roleDescription:"Experienced Software Engineer with a demonstrated history of working in the IT and services industry. Skilled in Flutter, React Js, Java, Android Development, web development and CI/CD.",
     linkedIn:"https://www.linkedin.com/in/beka-haile-589793195/",
     github:"https://github.com/BekaHaile",
     location:"UAE"
   },
   {
-    name:"Firaol Dida",
+    name:"Firaol Dida | Technical Advisor",
     imageSrc:firaol,
-    title:"Advisor | Software Engineer",
+    title:"Frontend Developer ",
     roleDescription:"Results-oriented full stack developer with 5+ years of experience, holding a degree in Computer Science and a Master's in Bioinformatics. With a proven track record of success in software development.",
     linkedIn:"https://www.linkedin.com/in/firaol-dida-150278156/",
     github:"https://github.com/yosef-seboka",
