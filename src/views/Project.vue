@@ -1,63 +1,71 @@
 <template>
-  <div class=" w-full overflow-hidden relative">
+  <div class="w-full overflow-hidden py-4 relative"  :class="currentProject.theme">
     <img
-        class="h-full w-full z-0 absolute opacity-50"
+        class="h-full w-full z-0 absolute opacity-20"
         src="../assets/shapes/shape-18.svg"
         alt="Bg Shape"/>
 
-    <div>
-      <div class="flex lg:flex-col lg:h-full lg:w-16 right-0 space-x-3 lg:space-y-4 lg:space-x-0 absolute justify-center  flex-row w-full h-16 bottom-0">
-        <button
-            v-for="index in projects" @click="activeProject(index)"
-            :class="{'bg-gray-200': activeIndex === index.id}"
-            class="w-3 h-3 p-2 rounded-full border-2 hover:bg-green-50 hover:border-green-50">
-        </button>
-      </div>
-    </div>
-    <div :class="currentProject.theme">
-      <h1 class="xl:text-4xl flex justify-center w-full text-3xl text-center text-white font-extrabold pt-6 uppercase">Our Projects</h1>
+
+    <div  class="flex min-h-screen h-screen flex-col justify-evenly py-4 ">
+      <h1 class="xl:text-4xl flex items-center justify-center w-full text-3xl text-center font-extrabold h-1/6 uppercase ">Our Projects</h1>
+
       <div
-        class="xl:container  m-auto px-4 md:px-12 xl:px-16">
+        class="h-4/6 w-full">
       <div
-          class="h-screen md:flex md:gap-6 md:items-center justify-center md:space-y-0 lg:items-center">
+          class="flex flex-col md:gap-6 md:items-center md:flex-row  space-y-5 lg:space-y-0 h-full justify-center md:space-y-0 lg:items-center">
 
         <div
-            class="md:5/12 lg:w-1/2 sm:items-center flex justify-center py-10 md:py-0 ">
+            class="md:5/12  lg:w-1/2 sm:items-center flex justify-center   md:py-0 ">
           <img
               :src="currentProject.ImageSrc"
               :alt="currentProject.name"
               loading="eager"
-              class="md:h-[30rem] h-[20rem] w-[40rem] object-contain z-10"
+              class="md:h-[30rem] h-[15rem] w-[40rem] object-contain z-10"
               :class="{'animate-bounce animate-once': animateImage}"
           />
         </div>
 
-        <div class="md:7/12 lg:w-1/2 h-fit pt-6 md:pt-6">
-          <span class="z-10">
+        <div class="md:7/12 lg:w-1/2 h-full ">
+          <span class="z-10 flex flex-col space-y-3  items-center md:items-start w-full justify-center h-full">
+            <span class="text-start  lg:max-w-xl xl:max-w-2xl w-full ">
+
            <p
-               class="text-sm uppercase font-normal tracking-tight sm:text-xl">{{ currentProject.category }}
+               class="text-sm uppercase font-normal py-1 tracking-tight sm:text-xl">{{ currentProject.category }}
            </p>
            <p
                class="text-3xl tracking-tight  font-bold sm:text-5xl">{{currentProject.name }}
            </p>
+            </span>
            <p
-               class="max-w-xl mt-4 text-base tracking-tight font-medium ">{{currentProject.description}}
+               class="lg:max-w-xl xl:max-w-2xl mt-4 text-base tracking-tight font-medium ">{{currentProject.description}}
            </p>
-         </span>
+
           <router-link
               v-if="currentProject.link"
               :to="currentProject.link"
               :href="currentProject.link"
-              class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-fit"
-          ><span class=" z-40 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
+              class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-full lg:max-w-xl xl:max-w-2xl"
+          ><span class="z-40 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
             MORE
            <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
           </span>
           </router-link>
+             </span>
         </div>
       </div>
     </div>
+
+      <div  class="flex   space-x-3   items-center justify-center flex-row w-full h-1/6 z-40">
+        <button
+            v-for="index in projects"
+            @click="activeProject(index)"
+            :class="{'bg-gray-200': activeIndex === index.id}"
+            class="w-3 h-3 p-2 rounded-full border-2 hover:bg-green-50 hover:border-green-50">
+        </button>
+      </div>
   </div>
+
+
   </div>
 </template>
 

@@ -24,23 +24,23 @@
                   <div class="flex py-5 items-end ">
                       <div :class="member.upwork? 'justify-between' :'justify-evenly'" class="w-2/4 h-10  flex  items-center   ">
                         <a v-if="member.github" :href="member.github" target="_blank" class="  h-full flex items-center">
-                          <box-icon type='logo' name='github' class="fill-gray-500 hover:fill-green-600" ></box-icon>
+                          <box-icon type='logo' name='github' class="fill-gray-500 hover:fill-gray-900" ></box-icon>
                         </a>
 
                         <a   v-if="member.linkedIn" :href="member.linkedIn" target="_blank" class="h-full flex items-center">
-                            <box-icon type='logo' name='linkedin' class="fill-gray-500 hover:fill-green-600"></box-icon>
+                            <box-icon type='logo' name='linkedin' class="fill-gray-500 hover:fill-blue-500"></box-icon>
                         </a>
 
                         <a v-if="member.upwork" :href="member.upwork" target="_blank"  class="  h-full flex items-center">
-                          <box-icon type='logo' name='upwork' class="fill-gray-500 hover:fill-green-600"></box-icon>
+                          <box-icon type='logo' name='upwork' class="fill-gray-500 hover:fill-green-500"></box-icon>
                         </a>
 
                       </div>
 
-                    <div class="w-2/4 h-10  flex justify-end items-center text-sm  hover:text-green-600">
-                            <box-icon name='current-location' class="fill-gray-500 hover:fill-green-600 w-5 "></box-icon>
+                    <div class="w-2/4 h-10  flex justify-end items-center text-sm  hover:text-primary group">
+                            <box-icon name='current-location' class="fill-gray-500 group-hover:fill-primary w-5 "></box-icon>
 
-                          <div class=" px-1 fill-gray-500 hover:text-green-600 ">
+                          <div class=" px-1 fill-gray-500 group-hover:text-primary ">
                               {{ member.location }}
                           </div>
                     </div>

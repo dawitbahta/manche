@@ -55,7 +55,7 @@
 
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <ul
-          :class="navBarStore.showNavBar ? 'flex  mt-10 ' + navBarStore.menuStyle  : 'hidden'"
+          :class="navBarStore.showNavBar ? 'flex  mt-10 z-50 ' + navBarStore.menuStyle  : 'hidden'"
           class="
           flex-col
           underline
