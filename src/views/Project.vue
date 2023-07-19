@@ -173,7 +173,7 @@ function activeProject(index){
 }
 
 const showNextProject = () => {
-  if(activeIndex.value > projects.length)
+  if(activeIndex.value >= projects.length)
     return;
 
   activeIndex.value += 1;
