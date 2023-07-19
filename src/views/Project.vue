@@ -49,7 +49,7 @@
               :to="currentProject.link"
               :href="currentProject.link"
               class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-fit"
-          ><span class=" z-50 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
+          ><span class=" z-40 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
             MORE
            <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
           </span>
@@ -64,7 +64,7 @@
 
 <script setup>
 import AOS from "aos";
-import {onMounted, ref} from "vue";
+import {onMounted, ref, watch} from "vue";
 import ankeboot from "../assets/projects/ankeboot.png";
 import rigelSMS from "../assets/projects/rigel.png"
 import tutor from "../assets/projects/tutor.png"
@@ -72,12 +72,15 @@ import betPlus from "../assets/projects/betPlus.png";
 import anbessa from "../assets/projects/anbessa-desktop.png";
 import fotbol from '../assets/projects/futbol.png';
 import gebeta from "../assets/projects/gebeta1.png";
+import {useNavBarStore} from "../store/navbar_store.js";
+
 onMounted(() => {
   AOS.init({
     duration: 1600,
   });
 })
 
+const navBarStore = useNavBarStore();
 const projects = [
   {
     id:1,
@@ -97,15 +100,7 @@ const projects = [
     ImageSrc:tutor,
 
   },
-  {
-    id:3,
-    name:"Company Management System",
-    theme:"orange",
-    category:"Web app",
-    description:"Help to manage their inventory, record incoming and outgoings, keep up with daily sales, get aggregate data on transactions, manage company letters and employees.",
-    ImageSrc:ankeboot,
 
-  },
   {
     id:4,
     name:"Bet+ Sports Betting",
@@ -113,6 +108,15 @@ const projects = [
     category:"Web app",
     description:"The ultimate sports betting platform that revolutionizes the way you connect with your favorite sports games and place your bets, all through a seamless web app experience. Designed to cater to sports enthusiasts and avid bettors, Offers a comprehensive suite of features that enhance the sports betting journey.",
     ImageSrc:betPlus,
+
+  },
+  {
+    id:3,
+    name:"Company Management System",
+    theme:"orange",
+    category:"Web app",
+    description:"Help to manage their inventory, record incoming and outgoings, keep up with daily sales, get aggregate data on transactions, manage company letters and employees.",
+    ImageSrc:ankeboot,
 
   },
   {
@@ -150,11 +154,15 @@ function activeProject(index){
   animateImage.value = true;
   currentProject.value = index;
   activeIndex.value = index.id;
+
+  navBarStore.selectedProject = index.id;
+  navBarStore.setProjectsNavBarTheme();
+
   setTimeout(() => {
     animateImage.value = false;
   }, 1000);
-}
 
+}
 </script>
 
 <style scoped>
