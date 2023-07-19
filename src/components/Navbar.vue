@@ -1,22 +1,17 @@
 <template>
-  <span class="relative">
-  <div class="fixed top-0 w-full z-30">
+
     <nav
         class="
-        px:8
+        fixed top-0 w-full z-50
         lg:px-16
         md:px-10
-        py-3
-        mx-auto
+        lg:py-3
+        py-2
         md:flex md:justify-between md:items-center
         text-center
         font-semibold
-        text-gray-400
-        transition-all duration-500
-
-        sm:bg-transparent
-              "
-        :class="navBarStyle"
+        "
+        :class="navBarStore.style"
 
     >
       <div class="flex items-center justify-between">
@@ -26,27 +21,26 @@
             class="
           w-fit
           text-2xl
+          px-5
           font-bold
-          ml-10
           rounded-md
           lowercase
           "
-            :class="{ ' text-gray-800 ': scrolled }"
+            :class="navBarStore.secondaryStyle"
         >
-          rigel. <span class="text-[#F6BA1E]">studio</span>
+          rigel. <span :class="navBarStore.logoStyle">studio</span>
 
       </router-link>
+
         <!-- Mobile menu button -->
-        <div @click="showNavBar = !showNavBar, showMenu = false" class="flex md:hidden">
+        <div @click="navBarStore.toggleNavBar(); navBarStore.toggleMenu()" class="flex md:hidden">
           <button
 
               type="button"
               class="
             pr-4
-              text-white
-              hover:text-white
-              fill-gray-400
             "
+              :class="navBarStore.secondaryStyle"
           >
             <svg  viewBox="0 0 24 24" class="w-6 h-6 ">
               <path
@@ -57,12 +51,12 @@
           </button>
         </div>
       </div>
+
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <ul
-          :class="showNavBar ? 'flex' : 'hidden'"
+          :class="navBarStore.showNavBar ? 'flex  mt-5' + navBarStore.style  : 'hidden'"
           class="
           flex-col
-          mt-8
           space-y-4
           md:flex
           md:space-y-0
@@ -70,34 +64,33 @@
           md:items-center
           md:space-x-10
           md:mt-0
-        bg-white
-          md:bg-transparent
-        "
+"
       >
         <a v-if="!isOnSubRoute" v-for="(section,index) in sections" :key="index"
            :href="section.linkId"
-            class="text-md hover:border-b-2  hover:border-green-500 hover:font-bold uppercase"
-            :class="navBarTextStyle"
+            class="text-md hover:border-b-2  hover:border-primary hover:font-bold uppercase"
              @click="scrollToSection($event, section.linkId)"
         >
           {{ section.name }}
         </a>
 
-        <a v-if="isOnSubRoute" href="#contact" class="uppercase hover:text-purple-500" @click="showNavBar = false">
+        <a v-if="isOnSubRoute" href="#contact" class="uppercase hover:text-primary" @click="navBarStore.toggleNavBar()">
 
           Contact
         </a>
       </ul>
-
-
     </nav>
-  </div>
-</span>
+
+
 </template>
 
 <script setup>
 import {ref, watch} from "vue";
 import {useRouter} from "vue-router";
+import {useNavBarStore} from "../store/navbar_store.js";
+
+const navBarStore = useNavBarStore();
+
 const sections = [
   {name:'Home',linkId:'#home'},
   {name:'About',linkId:'#about'},
@@ -111,12 +104,11 @@ const subRoute = '/SMS';
 watch(
     () => route.value.path,
     (newPath) => {
-      isOnSubRoute.value = newPath == subRoute;
+      isOnSubRoute.value = newPath === subRoute;
     }
 );
 
-const showNavBar = ref(false)
-const showMenu = ref(false);
+
 const scrolled = ref(false);
 
 function scrollToSection(event, linkId) {
@@ -125,25 +117,10 @@ function scrollToSection(event, linkId) {
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   }
-  showNavBar.value = false
+  navBarStore.toggleNavBar()
 }
 
-const navBarStyle = ref('bg-transparent');
-const navBarTextStyle = ref('text-white');
-window.addEventListener("scroll", () => {
-  switch (true) {
-    case window.scrollY <800:
 
-      navBarStyle.value = 'bg-transparent z-50';
-      navBarTextStyle.value = 'text-white';
-      break;
-
-    default:
-      navBarStyle.value = 'bg-white';
-  navBarTextStyle.value = 'text-black';
-      break;
-  }
-});
 </script>
 
 <style scoped>
