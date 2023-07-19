@@ -69,7 +69,7 @@
             <div class="mt-4">
               <button
                   type="submit"
-                  class="shadow-md font-medium my-5 py-2 px-4 text-white cursor-pointer bg-primary hover:bg-green-600 rounded text-lg text-center w-32"
+                  class="shadow-md font-medium my-5 py-2 px-4 text-white cursor-pointer bg-primary hover:bg-primary rounded text-lg text-center w-32"
               >
                 Send
               </button>
@@ -84,7 +84,7 @@
     <!-- notification  -->
     <div class="relative">
       <div v-if="showNotification" class="bg-white/20  backdrop-blur-xl z-20 max-w-md absolute right-5 bottom-1 rounded-lg p-3 shadow-lg">
-        <button @click="showNotification = !showNotification" type="button" class="absolute top-0 right-1.5 text-green-600 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-modal">
+        <button @click="showNotification = !showNotification" type="button" class="absolute top-0 right-1.5 text-primary bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-modal">
           <svg aria-hidden="true" class="w-5 h-5" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </button>
         <h1 class="text-md text-slate-700 font-medium pt-3 mr-2">Thank you,{{name}}! We've received your message and will be in touch soon. We appreciate your interest in working with us.</h1>
