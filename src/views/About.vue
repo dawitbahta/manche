@@ -43,12 +43,13 @@
             <ul class="grid grid-cols-1 gap-12 mt-6 list-none lg:mt-0 lg:gap-24" role="list">
               <li v-for="(specialization,index) in specializations" :key="index">
                 <div>
-                  <div class="flex items-center justify-center w-12 h-12  rounded-xl">
-                    <img :src="specialization.imageSrc">
+                  <div class="flex items-center space-x-4 rounded-xl">
+                    <img :src="specialization.imageSrc" class="w-10">
+                    <p class="text-lg font-medium leading-6 text-black">
+                      {{specialization.title}}
+                    </p>
                   </div>
-                  <p class="mt-5 text-lg font-medium leading-6 text-black">
-                    {{specialization.title}}
-                  </p>
+
                 </div>
                 <div class="mt-2 text-base text-gray-500">
                   {{specialization.description}}
