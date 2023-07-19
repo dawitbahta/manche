@@ -1,24 +1,22 @@
 <template>
+  <section class="flex flex-col lg:p-8  bg-gray-100">
+    <div class="bg-gray-100 flex  justify-center mx-auto pt-16">
+    <div>
+      <p class="text-primary text-md text-center font-bold pb-3">BUILDING TEAM</p>
+      <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-bold pb-6 sm:w-full w-5/6 mx-auto">The Talent Behind the Scenes</h1>
+    </div>
+  </div>
+    <div class="w-full pt-10  bg-gray-100">
 
-      <div class="bg-gray-100 flex justify-center mx-auto pt-16">
-        <div>
-          <p class="text-primary text-md text-center font-bold pb-3">BUILDING TEAM</p>
-          <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-bold pb-6 sm:w-full w-5/6 mx-auto">The Talent Behind the Scenes</h1>
-        </div>
-      </div>
-      <div class="w-full pt-10 bg-gray-100">
-        <div class="container mx-auto ">
-          <div class=" lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
+          <div class=" flex flex-col px-4 lg:px-0 lg:space-y-0  space-y-24 sm:flex-row items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
             <div v-for="(member,index) in teamMembers" :key="index"
-                 data-aos="fade-right"
-                 class=" p-3 xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-              <div class="rounded overflow-hidden shadow-md bg-white">
-                <div class="absolute -mt-20 w-full flex justify-center">
-                  <div class="h-32 w-32">
-                    <img :src="member.imageSrc" :alt="member.name+'photo'" role="img" class="rounded-full object-cover h-full w-full shadow-md" />
-                  </div>
+
+                 class=" p-3 xl:w-1/3 sm:w-3/4 md:w-2/5 relative  sm:my-24   xl:max-w-sm lg:w-2/5">
+              <div class="rounded  w-full  ">
+                <div class="-translate-y-0 lg:translate-y-10 w-full flex justify-center">
+                    <img :src="member.imageSrc" :alt="member.name+'photo'" role="img" class="rounded-full object-cover lg:w-28 w-20 shadow-md" />
                 </div>
-                <div class="px-6 mt-16">
+                <div class="px-6 lg:pt-14 shadow-md bg-white rounded-md">
                   <h1 class="font-bold text-3xl text-center mb-1">{{member.name}}</h1>
                   <p class="text-gray-800 text-sm text-center">{{member.title}}</p>
                   <p class="text-center text-gray-600 text-base pt-3 font-normal">{{member.roleDescription}}</p>
@@ -39,7 +37,7 @@
 
                       </div>
 
-                    <div class="w-2/4 h-10  flex justify-end items-center text-sm  hover:text-green-600   ">
+                    <div class="w-2/4 h-10  flex justify-end items-center text-sm  hover:text-green-600">
                             <box-icon name='current-location' class="fill-gray-500 hover:fill-green-600 w-5 "></box-icon>
 
                           <div class=" px-1 fill-gray-500 hover:text-green-600 ">
@@ -52,8 +50,9 @@
               </div>
             </div>
           </div>
-        </div>
+
       </div>
+  </section>
 </template>
 
 <script setup>
@@ -133,8 +132,8 @@ const teamMembers = [
   {
     name:"Bereket Gobeze",
     imageSrc:bereket,
-    title:"Senior Software Engineer | Technical and Strategic Advisor",
-    roleDescription:"An accomplished senior software engineer and former CTO, now an advisor and senior software engineer at our company, driving technological excellence and strategic growth.",
+    title:"Senior Software Engineer | Technical Advisor",
+    roleDescription:"An accomplished senior software engineer and former Anbessa Tech CEO, now an advisor and senior software engineer at our company, driving technological excellence and strategic growth.",
     linkedIn:"https://www.linkedin.com/in/bereket-gobeze/",
     github:"https://github.com/bereketnyb",
     location:"Ethiopia"
@@ -168,9 +167,9 @@ const teamMembers = [
     location:"UAE"
   },
   {
-    name:"Firaol Dida | Technical Advisor",
+    name:"Firaol Dida",
     imageSrc:firaol,
-    title:"Frontend Developer ",
+    title:"Frontend Developer | Technical Advisor",
     roleDescription:"Results-oriented full stack developer with 5+ years of experience, holding a degree in Computer Science and a Master's in Bioinformatics. With a proven track record of success in software development.",
     linkedIn:"https://www.linkedin.com/in/firaol-dida-150278156/",
     github:"https://github.com/yosef-seboka",

@@ -19,7 +19,7 @@
               <label class="sr-only" for="name">Name</label>
               <input
                   v-model="formData.name"
-                  class="w-full rounded-lg border border-green-200 !outline-none p-3 text-sm"
+                  class="w-full rounded-lg border border-primary/20 !outline-none p-3 text-sm"
                   placeholder="Name"
                   type="text"
                   id="name"
@@ -32,7 +32,7 @@
                 <label class="sr-only" for="email">Email</label>
                 <input
                     v-model="formData.email"
-                    class="w-full border border-green-200 !outline-none rounded-lg p-3 text-sm"
+                    class="w-full border border-primary/20 !outline-none rounded-lg p-3 text-sm"
                     placeholder="Email address"
                     type="email"
                     id="email"
@@ -44,7 +44,7 @@
                 <label class="sr-only" for="phone">Phone</label>
                 <input
                     v-model="formData.phone_no"
-                    class="border border-green-200 !outline-none w-full rounded-lg p-3 text-sm"
+                    class="border border-primary/20 !outline-none w-full rounded-lg p-3 text-sm"
                     placeholder="Phone Number"
                     type="tel"
                     id="phone"
@@ -58,7 +58,7 @@
 
               <textarea
                   v-model="formData.content"
-                  class="w-full rounded-lg border border-green-200 !outline-none p-3 text-sm"
+                  class="w-full rounded-lg border border-primary/20 !outline-none p-3 text-sm"
                   placeholder="Message"
                   rows="8"
                   id="message"
