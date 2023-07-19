@@ -61,7 +61,6 @@ export const useNavBarStore = defineStore({
             this.logoStyle = logoStyle;
         },
         setMenuTheme() {
-            console.log("current page", this.currentPage)
             switch (this.currentPage) {
                 case "home":
 

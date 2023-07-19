@@ -73,7 +73,7 @@
 
 <script setup>
 import AOS from "aos";
-import {nextTick, onMounted, ref, watch} from "vue";
+import {nextTick, onMounted, ref} from "vue";
 import ankeboot from "../assets/projects/ankeboot.png";
 import rigelSMS from "../assets/projects/rigel.png"
 import tutor from "../assets/projects/tutor.png"

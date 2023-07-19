@@ -41,7 +41,7 @@
   </section>
 
 <!-- feature details slider -->
-  <div class=" w-full overflow-hidden relative bg-purple-500">
+  <div class=" w-full overflow-hidden relative bg-purple-500" v-touch:swipe="swipeFeatures"  >
     <img
         class="h-full w-full z-0 absolute opacity-50"
         src="../../assets/shapes/shape-12.svg"
@@ -91,7 +91,7 @@
 
 <script setup>
 import AOS from "aos";
-import {onMounted, ref} from "vue";
+import { onMounted, ref} from "vue";
 import RigelDesktop from "../../assets/projects/rigelSMS/rigelSMS.png";
 import RigelMobile from "../../assets/projects/rigelSMS/mobile.png";
 
@@ -206,6 +206,16 @@ function activeFeature(index){
   }, 1000);
 }
 
+const swipeFeatures = () =>{
+  if (currentFeature.value.id === 1){
+    currentFeature.value = featureDetails[1]
+    activeIndex.value = 2;
+    }
+    else if (currentFeature.value.id === 2){
+      currentFeature.value = featureDetails[0]
+      activeIndex.value = 1;
+    }
+}
 </script>
 <style scoped>
 .animate-once {
