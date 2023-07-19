@@ -65,6 +65,7 @@
           <div
               class="md:5/12 lg:w-1/2 sm:items-center flex justify-center py-5 md:py-0 ">
             <img
+                :key="currentFeature.id"
                 :src="currentFeature.ImageSrc"
                 :alt="currentFeature.name"
                 loading="eager"
