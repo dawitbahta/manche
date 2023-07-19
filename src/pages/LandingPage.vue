@@ -1,11 +1,10 @@
 <template>
   <main>
-    <router-view></router-view>
-    <Hero id="home" ref="home"></Hero>
-    <About id="about" ref="about"></About>
-    <Project id="projects" ref="projects"></Project>
-    <Team data-aos="fade-up" ref="team"></Team>
-    <Contact data-aos="fade-up" id="contact" ref="contact"></Contact>
+    <Hero id="home" ref="homeRef"></Hero>
+    <About id="about" ref="aboutRef"></About>
+    <Project id="projects" ref="projectsRef"></Project>
+    <Team data-aos="fade-up" ref="teamRef"></Team>
+    <Contact data-aos="fade-up" id="contact" ref="contactRef"></Contact>
   </main>
 </template>
 
@@ -15,9 +14,12 @@ import About from "../views/About.vue";
 import Project from "../views/Project.vue";
 import Team from "../views/Team.vue";
 import Contact from "../views/Contact.vue";
-
 import AOS from "aos";
-import {computed, nextTick, onBeforeUnmount, onMounted, ref} from "vue";
+import {nextTick, onBeforeUnmount, onMounted, ref} from "vue";
+import {useNavBarStore} from "../store/navbar_store.js";
+
+const navBarStore = useNavBarStore();
+
 onMounted(() => {
   AOS.init({
   });
@@ -32,37 +34,33 @@ onBeforeUnmount(() => {
 });
 
 const homeRef = ref(null)
-const home = computed(() => homeRef.value)
-const about = ref(null);
-const team = ref(null);
-const projects = ref(null);
-const contact = ref(null);
+const aboutRef = ref(null);
+const teamRef = ref(null);
+const projectsRef = ref(null);
+const contactRef = ref(null);
 
 const handleScroll = () => {
   let scrollPosition = window.scrollY;
 
-  let homePosition = home.value?.offsetTop;
-  let aboutPosition = about.value?.offsetTop;
-  let teamPosition = team.value?.offsetTop;
-  let projectsPosition = projects.value?.offsetTop;
-  let contactPosition = contact.value?.offsetTop;
-  console.log("Positions: ", {homePosition, aboutPosition, teamPosition, projectsPosition, contactPosition});
+  let homePosition = homeRef.value.$el.offsetTop;
+  let aboutPosition = aboutRef.value.$el.offsetTop;
+  let teamPosition = teamRef.value.$el.offsetTop;
+  let projectsPosition = projectsRef.value.$el.offsetTop;
+  let contactPosition = contactRef.value.$el.offsetTop;
 
-  let color;
   if (scrollPosition >= homePosition && scrollPosition < aboutPosition) {
+    navBarStore.setNavBarTheme('bg-secondary text-white', 'text-gray-300 fill-gray-300', 'text-primary')
 
-    color = 'red';
+    if (navBarStore.showMenu)
+      navBarStore.style = 'bg-gray-500';
 
-  } else if (scrollPosition >= aboutPosition && scrollPosition < teamPosition) {
-    color = 'blue';
-  } else if (scrollPosition >= teamPosition && scrollPosition < projectsPosition) {
-    color = 'green';
-  } else if (scrollPosition >= projectsPosition && scrollPosition < contactPosition) {
-    color = 'yellow';
-  } else if (scrollPosition >= contactPosition) {
-    color = 'purple';
+  } else if (scrollPosition >= aboutPosition && scrollPosition < projectsPosition) {
+    navBarStore.setNavBarTheme('bg-gray-100 text-black', 'text-black fill-black', 'text-primary')
+  } else if (scrollPosition >= projectsPosition && scrollPosition < teamPosition) {
+    navBarStore.setProjectsNavBarTheme();
+  } else if (scrollPosition >= teamPosition && scrollPosition < contactPosition) {
+    navBarStore.setNavBarTheme('bg-gray-100', 'text-black fill-black', 'text-primary')
   }
-  console.log(color);
 }
 </script>
 
