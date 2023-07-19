@@ -60,8 +60,10 @@
           flex-col
           underline
           underline-offset-8
+          lg:no-underline
           font-light
           h-screen
+          lg:h-fit
           space-y-10
           md:flex
           md:space-y-0
@@ -73,7 +75,8 @@
       >
         <a v-if="!isOnSubRoute" v-for="(section,index) in sections" :key="index"
            :href="section.linkId"
-            class="text-md hover:border-b-2  hover:border-primary hover:font-bold uppercase"
+            class="text-md hover:border-b-2 hover:font-bold uppercase"
+           :class="'border-' + navBarStore.secondaryStyle"
              @click="scrollToSection($event, section.linkId)"
         >
           {{ section.name }}
