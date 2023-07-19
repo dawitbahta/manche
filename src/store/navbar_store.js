@@ -35,7 +35,7 @@ export const useNavBarStore = defineStore({
                     break;
                 case 4:
                     this.setNavBarTheme('bg-blue-700 text-blue-50', 'text-blue-50 fill-blue-50', 'text-amber-400');
-                    this.setMenuProperty('bg-blue-700 text-blue-50', 'text-orange-50');
+                    this.setMenuProperty('bg-blue-700 text-blue-50 ', 'text-orange-50');
                     break;
                 case 5:
                     this.setNavBarTheme('bg-red-600 text-red-50', 'text-red-50 fill-red-50', 'text-[#2E2E2E]');

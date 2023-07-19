@@ -28,7 +28,7 @@
           "
             :class="navBarStore.secondaryStyle"
         >
-          rigel. <span :class="navBarStore.logoStyle">studio</span>
+          rigel.<span :class="navBarStore.logoStyle">studio</span>
 
       </router-link>
 
@@ -63,7 +63,7 @@
           lg:no-underline
           font-light
           h-screen
-          lg:h-fit
+          md:h-fit
           space-y-10
           md:flex
           md:space-y-0
