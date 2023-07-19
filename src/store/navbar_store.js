@@ -26,7 +26,7 @@ export const useNavBarStore = defineStore({
                     this.setMenuProperty('bg-purple-600 text-purple-50', 'text-[#B8BFC6]');
                     break;
                 case 2:
-                    this.setNavBarTheme('bg-gray-700 text-gray-50', 'text-gray-50 fill-gray-50', 'text-amber-400');
+                    this.setNavBarTheme('bg-gray-700 text-gray-50', 'text-gray-100 fill-gray-50', 'text-amber-400');
                     this.setMenuProperty('bg-gray-700 text-gray-50', 'text-gray-50');
                     break;
                 case 3:
@@ -72,8 +72,10 @@ export const useNavBarStore = defineStore({
                 this.setProjectsNavBarTheme()
                     break;
                 case "team":
-                    this.menuStyle = 'bg-white text-black';
-                    this.menuButtonStyle = 'text-black';
+                    this.setMenuProperty('bg-gray-100 text-black', 'text-black');
+                    this.setNavBarTheme('bg-gray-100 text-gray-800', 'text-gray-800 fill-gray-800', 'text-primary');
+                    break;
+                default:
                     break;
             }
         },

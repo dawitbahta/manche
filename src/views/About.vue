@@ -1,6 +1,6 @@
 <template>
-<div class="h-auto pt-1 pb-10 bg-[#EEEEEE] ">
-  <section data-aos="fade-up" aria-labelledby="feature-five" id="feature-five" class="overflow-y-auto bg-[#EEEEEE] lg:h-screen">
+<div class="h-auto pt-1 pb-10 bg-gray-100">
+  <section data-aos="fade-up" aria-labelledby="feature-five" id="feature-five" class="overflow-y-auto bg-gray-100 lg:h-screen">
     <div class="px-8 py-24 mx-auto  lg:px-16 max-w-7xl md:px-12 xl:px-36 lg:flex">
       <div class="lg:w-1/2">
         <div class="top-0 pt-8 pb-16 lg:sticky">
