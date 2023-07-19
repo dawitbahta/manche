@@ -70,10 +70,9 @@ export const useNavBarStore = defineStore({
                     break;
                 case "about":
                     this.setMenuProperty('bg-gray-100 text-black', 'fill-black');
-                    this.setNavBarTheme('bg-gray-100 text-gray-700', 'text-gray-800 fill-gray-50', 'text-primary');
+                    this.setNavBarTheme('bg-gray-100 text-gray-700', 'text-gray-800 fill-gray-800', 'text-primary');
                     break;
                 case "projects":
-
                      this.setProjectsNavBarTheme()
                     break;
                 case "team":
@@ -81,7 +80,6 @@ export const useNavBarStore = defineStore({
                     this.setNavBarTheme('bg-gray-100 text-gray-800', 'text-gray-800 fill-gray-800', 'text-primary');
                     break;
                 case "contact":
-
                     this.setNavBarTheme('bg-gray-100 text-gray-800', 'text-gray-800 fill-gray-800', 'text-primary');
                     this.setMenuProperty('bg-gray-100 text-black', 'fill-black');
                     break;
