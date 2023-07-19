@@ -26,8 +26,8 @@
         </div>
 
         <div class="md:7/12 lg:w-1/2 h-full ">
-          <span class="z-10 flex flex-col space-y-3  items-center md:items-start w-full justify-center h-full">
-            <span class="text-start  lg:max-w-xl xl:max-w-2xl w-full ">
+          <span class="z-10 flex flex-col  space-y-3  items-center md:items-start w-full justify-center h-full">
+            <span class="text-start w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl lg:w-full ">
 
            <p
                class="text-sm uppercase font-normal py-1 tracking-tight sm:text-xl">{{ currentProject.category }}
@@ -37,14 +37,14 @@
            </p>
             </span>
            <p
-               class="lg:max-w-xl xl:max-w-2xl mt-4 text-base tracking-tight font-medium ">{{currentProject.description}}
+               class="lg:max-w-xl xl:max-w-2xl mt-4 text-base tracking-tight w-11/12  font-medium ">{{currentProject.description}}
            </p>
 
           <router-link
               v-if="currentProject.link"
               :to="currentProject.link"
               :href="currentProject.link"
-              class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-full lg:max-w-xl xl:max-w-2xl"
+              class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl"
           ><span class="z-40 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
             MORE
            <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
