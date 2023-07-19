@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full overflow-hidden py-4 relative"  :class="currentProject.theme">
+  <div class="w-full overflow-hidden py-4 relative"  v-touch:swipe.right="showPreviousProject" v-touch:swipe.left="showNextProject" :class="currentProject.theme">
     <img
         class="h-full w-full z-0 absolute opacity-20"
         src="../assets/shapes/shape-18.svg"
@@ -110,7 +110,7 @@ const projects = [
   },
 
   {
-    id:4,
+    id:3,
     name:"Bet+ Sports Betting",
     theme:"blue",
     category:"Web app",
@@ -119,7 +119,7 @@ const projects = [
 
   },
   {
-    id:3,
+    id:4,
     name:"Company Management System",
     theme:"orange",
     category:"Web app",
@@ -158,6 +158,7 @@ const projects = [
 const activeIndex = ref(1)
 const animateImage = ref(false)
 let currentProject = ref(projects[0])
+
 function activeProject(index){
   animateImage.value = true;
   currentProject.value = index;
@@ -169,8 +170,30 @@ function activeProject(index){
   setTimeout(() => {
     animateImage.value = false;
   }, 1000);
-
 }
+
+const showNextProject = () => {
+  if(activeIndex.value > projects.length)
+    return;
+
+  activeIndex.value += 1;
+  currentProject.value = projects[activeIndex.value - 1]; // Subtract 1 to get 0-based index
+  navBarStore.selectedProject = currentProject.value.id;
+  navBarStore.setProjectsNavBarTheme();
+}
+
+
+const showPreviousProject = () => {
+  if(activeIndex.value <= 1)
+    return;
+
+  activeIndex.value -= 1;
+  currentProject.value = projects[activeIndex.value - 1]; // Subtract 1 to get 0-based index
+  navBarStore.selectedProject = currentProject.value.id;
+  navBarStore.setProjectsNavBarTheme();
+}
+
+
 </script>
 
 <style scoped>

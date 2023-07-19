@@ -23,7 +23,7 @@ export const useNavBarStore = defineStore({
         setProjectsNavBarTheme() {
             switch (this.selectedProject) {
                 case 1:
-                    this.setNavBarTheme('bg-purple-600 text-purple-50', 'text-purple-50 fill-purple-50', 'text-[#B8BFC6]');
+                    this.setNavBarTheme('bg-purple-600 text-purple-50', 'text-purple-50 fill-purple-50', 'text-amber-400');
                     this.setMenuProperty('bg-purple-600 text-purple-50', 'fill-[#B8BFC6]');
                     break;
                 case 2:
@@ -31,13 +31,14 @@ export const useNavBarStore = defineStore({
                     this.setMenuProperty('bg-gray-700 text-gray-50', 'fill-gray-50');
                     break;
                 case 3:
-                    this.setNavBarTheme('bg-orange-700 text-orange-50', 'text-white fill-white', 'text-orange-200');
-                    this.setMenuProperty('bg-orange-700 text-orange-50', 'fill-orange-50');
-                    break;
-                case 4:
                     this.setNavBarTheme('bg-blue-700 text-blue-50', 'text-blue-50 fill-blue-50', 'text-amber-400');
                     this.setMenuProperty('bg-blue-700 text-blue-50 ', 'fill-orange-50');
                     break;
+                case 4:
+                    this.setNavBarTheme('bg-orange-700 text-orange-50', 'text-white fill-white', 'text-orange-200');
+                    this.setMenuProperty('bg-orange-700 text-orange-50', 'fill-orange-50');
+                    break;
+
                 case 5:
                     this.setNavBarTheme('bg-red-600 text-red-50', 'text-red-50 fill-red-50', 'text-[#2E2E2E]');
                     this.setMenuProperty('bg-red-600 text-red-50', 'fill-red-50');
