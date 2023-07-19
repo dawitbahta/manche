@@ -17,6 +17,7 @@
         <div
             class="md:5/12  lg:w-1/2 sm:items-center flex justify-center   md:py-0 ">
           <img
+              :key="currentProject.id"
               :src="currentProject.ImageSrc"
               :alt="currentProject.name"
               loading="eager"
@@ -72,7 +73,7 @@
 
 <script setup>
 import AOS from "aos";
-import {onMounted, ref, watch} from "vue";
+import {nextTick, onMounted, ref, watch} from "vue";
 import ankeboot from "../assets/projects/ankeboot.png";
 import rigelSMS from "../assets/projects/rigel.png"
 import tutor from "../assets/projects/tutor.png"
@@ -167,19 +168,27 @@ function activeProject(index){
   navBarStore.selectedProject = index.id;
   navBarStore.setProjectsNavBarTheme();
 
-  setTimeout(() => {
-    animateImage.value = false;
-  }, 1000);
+  nextTick(() => {
+    setTimeout(() => {
+      animateImage.value = false;
+    }, 3000);
+  });
 }
 
 const showNextProject = () => {
   if(activeIndex.value >= projects.length)
     return;
-
+  animateImage.value = true;
   activeIndex.value += 1;
   currentProject.value = projects[activeIndex.value - 1]; // Subtract 1 to get 0-based index
   navBarStore.selectedProject = currentProject.value.id;
   navBarStore.setProjectsNavBarTheme();
+
+  nextTick(() => {
+    setTimeout(() => {
+      animateImage.value = false;
+    }, 3000);
+  });
 }
 
 
@@ -187,10 +196,17 @@ const showPreviousProject = () => {
   if(activeIndex.value <= 1)
     return;
 
+  animateImage.value = true;
   activeIndex.value -= 1;
   currentProject.value = projects[activeIndex.value - 1]; // Subtract 1 to get 0-based index
   navBarStore.selectedProject = currentProject.value.id;
   navBarStore.setProjectsNavBarTheme();
+
+  nextTick(() => {
+    setTimeout(() => {
+      animateImage.value = false;
+    }, 3000);
+  });
 }
 
 
