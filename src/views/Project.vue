@@ -45,7 +45,7 @@
               :to="currentProject.link"
               :href="currentProject.link"
               class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl"
-          ><span class="z-40 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
+          ><span class="z-50 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
             MORE
            <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
           </span>

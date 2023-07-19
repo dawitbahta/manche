@@ -49,7 +49,7 @@
               ></path>
             </svg>
           </button>
-          <div v-else class="text-xl font-light px-4" :class="navBarStore.menuButtonStyle">X</div>
+            <box-icon v-else name="x" :class="navBarStore.menuButtonStyle"></box-icon>
         </div>
       </div>
 
@@ -77,7 +77,7 @@
            :href="section.linkId"
             class="text-md hover:border-b-2 hover:font-bold uppercase"
            :class="'border-' + navBarStore.secondaryStyle"
-             @click="scrollToSection($event, section.linkId)"
+             @click="scrollToSection($event, section.linkId);"
         >
           {{ section.name }}
         </a>
@@ -123,12 +123,30 @@ function scrollToSection(event, linkId) {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   }
   navBarStore.toggleNavBar()
+
+  switch (linkId) {
+    case '#home':
+      navBarStore.currentPage = 'home';
+      break;
+    case '#about':
+      navBarStore.currentPage = 'about';
+      break;
+    case '#projects':
+      navBarStore.currentPage = 'projects';
+      break;
+    case '#contact':
+      navBarStore.currentPage = 'contact';
+      break;
+    default:
+      break;
+  }
+  navBarStore.setMenuTheme()
 }
 
 const handleMenuClick = () =>{
   navBarStore.toggleNavBar()
   navBarStore.toggleMenu()
-navBarStore.setMenuTheme()
+  navBarStore.setMenuTheme()
 }
 
 </script>

@@ -1,22 +1,21 @@
 <template>
   <section class="flex flex-col lg:p-8  bg-gray-100">
-    <div class="bg-gray-100 flex  justify-center mx-auto pt-16">
+    <div class="bg-gray-100 flex  justify-center mx-auto pt-10">
     <div>
       <p class="text-primary text-md text-center font-bold pb-3">BUILDING TEAM</p>
       <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-bold pb-6 sm:w-full w-5/6 mx-auto">The Talent Behind the Scenes</h1>
     </div>
   </div>
-    <div class="w-full pt-10  bg-gray-100">
 
-          <div class=" flex flex-col px-4 lg:px-0 lg:space-y-0  space-y-24 sm:flex-row items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
+  <div class=" flex flex-col px-4 lg:px-0 lg:space-y-0  sm:flex-row  sm:justify-around flex-wrap ">
             <div v-for="(member,index) in teamMembers" :key="index"
 
-                 class=" p-3 xl:w-1/3 sm:w-3/4 md:w-2/5 relative  sm:my-24   xl:max-w-sm lg:w-2/5">
-              <div class="rounded  w-full  ">
-                <div class="-translate-y-0 lg:translate-y-10 w-full flex justify-center">
+                 class=" p-3 xl:w-1/3 sm:w-3/4 md:w-2/5 relative  xl:max-w-sm lg:w-2/5">
+
+                <div class="translate-y-10 lg:translate-y-10 w-full flex justify-center">
                     <img :src="member.imageSrc" :alt="member.name+'photo'" role="img" class="rounded-full object-cover lg:w-28 w-20 shadow-md" />
                 </div>
-                <div class="px-6 lg:pt-14 shadow-md bg-white rounded-md">
+                <div class="px-6 pt-14  shadow-md bg-white rounded-md">
                   <h1 class="font-bold text-3xl text-center mb-1">{{member.name}}</h1>
                   <p class="text-gray-800 text-sm text-center">{{member.title}}</p>
                   <p class="text-center text-gray-600 text-base pt-3 font-normal">{{member.roleDescription}}</p>
@@ -49,9 +48,8 @@
                 </div>
               </div>
             </div>
-          </div>
 
-      </div>
+
   </section>
 </template>
 

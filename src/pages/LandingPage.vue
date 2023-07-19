@@ -49,14 +49,14 @@ const handleScroll = () => {
   let contactPosition = contactRef.value.$el.offsetTop;
 
   if (scrollPosition >= homePosition && scrollPosition < aboutPosition) {
-    navBarStore.setNavBarTheme('bg-secondary text-white', 'text-gray-300 fill-gray-300', 'text-primary')
      navBarStore.currentPage = 'home';
+    navBarStore.setNavBarTheme('bg-secondary text-white', 'text-gray-300 fill-gray-300', 'text-primary')
   } else if (scrollPosition >= aboutPosition && scrollPosition < projectsPosition) {
-    navBarStore.setNavBarTheme('bg-gray-100 text-black', 'text-black fill-black', 'text-primary');
     navBarStore.currentPage = 'about';
+    navBarStore.setNavBarTheme('bg-gray-100 text-black', 'text-black fill-black', 'text-primary');
   } else if (scrollPosition >= projectsPosition && scrollPosition < teamPosition) {
-    navBarStore.setProjectsNavBarTheme();
     navBarStore.currentPage = 'projects';
+    navBarStore.setProjectsNavBarTheme();
   } else if (scrollPosition >= teamPosition && scrollPosition < contactPosition) {
     navBarStore.currentPage = 'team';
     navBarStore.setNavBarTheme('bg-gray-100', 'text-black fill-black', 'text-primary')
