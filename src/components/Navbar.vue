@@ -33,9 +33,9 @@
       </router-link>
 
         <!-- Mobile menu button -->
-        <div @click="navBarStore.toggleNavBar(); navBarStore.toggleMenu()" class="flex md:hidden">
+        <div @click="handleMenuClick" class="flex md:hidden">
           <button
-
+              v-if="!navBarStore.showNavBar"
               type="button"
               class="
             pr-4
@@ -49,15 +49,20 @@
               ></path>
             </svg>
           </button>
+          <div v-else class="text-xl font-light px-4" :class="navBarStore.menuButtonStyle">X</div>
         </div>
       </div>
 
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <ul
-          :class="navBarStore.showNavBar ? 'flex  mt-5' + navBarStore.style  : 'hidden'"
+          :class="navBarStore.showNavBar ? 'flex  mt-10 ' + navBarStore.menuStyle  : 'hidden'"
           class="
           flex-col
-          space-y-4
+          underline
+          underline-offset-8
+          font-light
+          h-screen
+          space-y-10
           md:flex
           md:space-y-0
           md:flex-row
@@ -108,9 +113,6 @@ watch(
     }
 );
 
-
-const scrolled = ref(false);
-
 function scrollToSection(event, linkId) {
   event.preventDefault();
   const targetElement = document.querySelector(linkId);
@@ -120,6 +122,11 @@ function scrollToSection(event, linkId) {
   navBarStore.toggleNavBar()
 }
 
+const handleMenuClick = () =>{
+  navBarStore.toggleNavBar()
+  navBarStore.toggleMenu()
+navBarStore.setMenuTheme()
+}
 
 </script>
 

@@ -50,17 +50,20 @@ const handleScroll = () => {
 
   if (scrollPosition >= homePosition && scrollPosition < aboutPosition) {
     navBarStore.setNavBarTheme('bg-secondary text-white', 'text-gray-300 fill-gray-300', 'text-primary')
-
-    if (navBarStore.showMenu)
-      navBarStore.style = 'bg-gray-500';
-
+     navBarStore.currentPage = 'home';
   } else if (scrollPosition >= aboutPosition && scrollPosition < projectsPosition) {
-    navBarStore.setNavBarTheme('bg-gray-100 text-black', 'text-black fill-black', 'text-primary')
+    navBarStore.setNavBarTheme('bg-gray-100 text-black', 'text-black fill-black', 'text-primary');
+    navBarStore.currentPage = 'about';
   } else if (scrollPosition >= projectsPosition && scrollPosition < teamPosition) {
     navBarStore.setProjectsNavBarTheme();
+    navBarStore.currentPage = 'projects';
   } else if (scrollPosition >= teamPosition && scrollPosition < contactPosition) {
+    navBarStore.currentPage = 'team';
     navBarStore.setNavBarTheme('bg-gray-100', 'text-black fill-black', 'text-primary')
   }
+
+  if (navBarStore.showMenu)
+  navBarStore.setMenuTheme()
 }
 </script>
 
