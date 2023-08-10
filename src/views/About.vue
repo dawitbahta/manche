@@ -14,9 +14,9 @@
                 <div class="flex flex-col space-y-3 max-w-xl mt-4 text-lg tracking-tight text-gray-600">
 
                 <p class="">
-                  We are dreamers and doers who believe technology can transform Ethiopia's future.</p>
+                  We are visionaries and innovators who believe that technology can shape Ethiopia's future.</p>
                 <p>We are a team driven by our shared vision of an Ethiopia where technology facilitates progress, transparency and prosperity for all.
-                  Our solutions pave new pathways so ideas can become reality. We forge ahead step-by-step, but with giant leaps in mind.
+                  
                 </p>
 
                 <p>
@@ -24,7 +24,7 @@
                   We listen first, then innovate. Understanding people's needs is the foundation on which we build the future.
                 </p>
 
-                <p>We are Rigel Studio - proudly Ethiopian, unmistakably modern, and ready to shape tomorrow, today. </p>
+                <p>We are Rigel Studio - rooted in Ethiopia, soaring to the stars, and always pushing the boundaries of what is possible.</p>
 
                 </div>
               </div>
@@ -91,7 +91,7 @@ const specializations =[
   {
     imageSrc:ai,
     title:"Data Analytics & AI",
-    description:"Staying at the forefront of data analytics and AI, we embrace cutting-edge technologies to extract profound insights and drive meaningful intelligence. Through constantly evolving strategies leveraging the latest advancements, we empower organizations to unlock hidden potential within their data. This enables informed decision-making and a competitive edge in today's data-driven landscape. We are forward-thinking guides, revealing the full power of data and AI to shape the future."
+    description:"Staying at the forefront of data analytics and AI, we embrace cutting-edge technologies to extract profound insights and drive meaningful intelligence. Through constantly evolving strategies leveraging the latest advancements, we empower organizations to unlock hidden potential within their data. This enables informed decision-making and a competitive edge in today's data-driven landscape."
   },
   {
     imageSrc:customerService,

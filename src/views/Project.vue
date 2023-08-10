@@ -78,7 +78,7 @@ import ankeboot from "../assets/projects/ankeboot.png";
 import rigelSMS from "../assets/projects/rigel.png"
 import tutor from "../assets/projects/tutor.png"
 import betPlus from "../assets/projects/betPlus.png";
-import anbessa from "../assets/projects/anbessa-desktop.png";
+import anbessa from "../assets/projects/anbessa.png";
 import fotbol from '../assets/projects/futbol.png';
 import gebeta from "../assets/projects/gebeta1.png";
 import {useNavBarStore} from "../store/navbar_store.js";

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col lg:p-8  bg-gray-100">
+  <section class="flex flex-col lg:p-16 bg-gray-100">
     <div class="bg-gray-100 flex  justify-center mx-auto pt-10">
     <div>
       <p class="text-primary text-md text-center font-bold pb-3">BUILDING TEAM</p>
