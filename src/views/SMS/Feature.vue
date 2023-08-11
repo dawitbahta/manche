@@ -157,17 +157,16 @@ const features = [
   },
   {
     id:7,
+    title:"Data backup and security",
+    description:"Secure data management with backup & security to protect your data.",
+    icon:dataMgmtIcon,
+    subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
+  },
+  {
+    id:8,
     title:"Language",
     description:"Accepts multiple languages, including Amharic and English. We are also on track to add additional languages in the near future.",
     icon:languageIcon,
-    subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
-  },
-
-  {
-    id:8,
-    title:"Data Management",
-    description:"Secure data management with backup & security to protect your data.",
-    icon:dataMgmtIcon,
     subFeatures:["subFeatureTitleOne","subFeatureTitleTwo","subFeatureTitleThree"]
   },
   {

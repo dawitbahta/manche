@@ -18,8 +18,7 @@
 <!--          Desktop version-->
           <p class="max-w-xl mx-auto mt-8 text-2xl font-light text-gray-50 hidden md:inline-block">
             At Rigel, we blend innovation and technology to craft software solutions that catalyze growth and drive progress. Join us on this digital journey to transform ideas into realities and create a technologically empowered
-            <span class="bg-[#D6DEE7] text-black font-bold px-3 py-0.5 skew-x-5">
-             ETHIOPIA!</span>
+             ETHIOPIA!
           </p>
         </div>
         <div class="flex flex-col justify-center  gap-3 mx-auto w-10/12  mt-10 sm:flex-row">
