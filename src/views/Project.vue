@@ -1,51 +1,50 @@
 <template>
-  <div class="w-full overflow-hidden py-4 relative"  v-touch:swipe.right="showPreviousProject" v-touch:swipe.left="showNextProject" :class="currentProject.theme">
+  <div class="w-full overflow-hidden py-1 lg:py-4 relative"  v-touch:swipe.right="showPreviousProject" v-touch:swipe.left="showNextProject" :class="currentProject.theme">
     <img
         class="h-full w-full z-0 absolute opacity-20"
         src="../assets/shapes/shape-18.svg"
         alt="Bg Shape"/>
 
 
-    <div  class="flex min-h-screen h-screen flex-col justify-evenly py-4 ">
-      <h1 class="xl:text-4xl flex items-center justify-center w-full text-3xl text-center font-extrabold h-1/6 uppercase ">Our Projects</h1>
+    <div  class="flex min-h-screen h-screen flex-col space-y-2 justify-evenly py-10 sm:py-2 md:py-4 ">
+      <h1 class="xl:text-4xl flex items-center justify-center w-full text-3xl text-center font-extrabold  uppercase ">Our Projects</h1>
 
-      <div
-        class="h-4/6 w-full">
+
       <div
           class="flex flex-col md:gap-6 md:items-center md:flex-row  space-y-5 lg:space-y-0 h-full justify-center md:space-y-0 lg:items-center">
 
         <div
-            class="md:5/12  lg:w-1/2 sm:items-center flex justify-center   md:py-0 ">
+            class="md:5/12  lg:w-1/2 sm:items-center flex justify-center md:py-0 ">
           <img
               :key="currentProject.id"
               :src="currentProject.ImageSrc"
               :alt="currentProject.name"
               loading="eager"
-              class="md:h-[30rem] h-[15rem] w-[40rem] object-contain z-10"
+              class="md:h-[30rem] h-[12rem] sm:h-[15rem] w-[40rem] object-contain z-10"
               :class="{'animate-bounce animate-once': animateImage}"
           />
         </div>
 
-        <div class="md:7/12 lg:w-1/2 h-full ">
+        <div class="md:7/12 lg:w-1/2 h-full">
           <span class="z-10 flex flex-col  space-y-3  items-center md:items-start w-full justify-center h-full">
-            <span class="text-start w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl lg:w-full ">
+            <span class="text-start w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl">
 
            <p
-               class="text-sm uppercase font-normal py-1 tracking-tight sm:text-xl">{{ currentProject.category }}
+               class="text-xs uppercase font-normal py-1 tracking-tight sm:text-xl">{{ currentProject.category }}
            </p>
            <p
-               class="text-3xl tracking-tight  font-bold sm:text-5xl">{{currentProject.name }}
+               class="text-2xl tracking-tight font-bold sm:text-5xl">{{currentProject.name }}
            </p>
             </span>
            <p
-               class="lg:max-w-xl xl:max-w-2xl mt-4 text-base tracking-tight w-11/12  font-medium ">{{currentProject.description}}
+               class="lg:max-w-xl xl:max-w-2xl mt-4 text-sm sm:text-sm md:text-base tracking-tight w-11/12 font-medium ">{{currentProject.description}}
            </p>
 
           <router-link
               v-if="currentProject.link"
               :to="currentProject.link"
               :href="currentProject.link"
-              class="flex underline underline-offset-4 cursor-pointer hover:scale-105 h-12 justify-left w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl"
+              class="flex underline underline-offset-4 cursor-pointer h-12 justify-left w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl"
           ><span class="z-50 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
             MORE
            <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
@@ -54,7 +53,7 @@
              </span>
         </div>
       </div>
-    </div>
+
 
       <div  class="flex   space-x-3   items-center justify-center flex-row w-full h-1/6 z-40">
         <button
