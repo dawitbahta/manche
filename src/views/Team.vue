@@ -73,25 +73,26 @@ onMounted(() => {
 
 const teamMembers = [
   {
-    imageSrc:adil,
-    name:"Adil Abdu",
-    title:"CEO | Board Member | Technical Lead",
-    roleDescription:"Our CEO is the lead author on an IEEE Access publication on unsupervised machine learning algorithms, involved in internationally nominated projects.",
-    linkedIn:"http://www.linkedin.com/in/yosefseboka",
-    github:"https://github.com/adilabdu",
-    upwork:"https://www.upwork.com/freelancers/~012639c223643a15e8",
-    location:"Ethiopia"
-  },
-  {
     imageSrc:placeHolder,
     name:"Kalid Abdu",
-    title:"CTO | Board Member | Project Manager",
-    roleDescription:"With over 7+ years of experience in programming, leadership, and serving as CTO, Kalid guides our company as Chief Technology Officer and Project Manager." ,
+    title:"CEO | Board Member | Project Manager",
+    roleDescription:"With over 7+ years of experience in programming, leadership, and serving as CTO, Kalid guides our company as CEO and Project Manager." ,
     linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
     github:"https://github.com/Kalid10",
     upwork:"https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
     location:"Ethiopia"
   },
+  {
+    imageSrc:adil,
+    name:"Adil Abdu",
+    title:"CTO | Board Member | Technical Lead",
+    roleDescription:"Our CTO is the lead author on an IEEE Access publication on unsupervised machine learning algorithms, involved in internationally nominated projects.",
+    linkedIn:"http://www.linkedin.com/in/yosefseboka",
+    github:"https://github.com/adilabdu",
+    upwork:"https://www.upwork.com/freelancers/~012639c223643a15e8",
+    location:"Ethiopia"
+  },
+
   {
     imageSrc:biniyam,
     name:"Biniyam Lemma ",
