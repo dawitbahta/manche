@@ -1,5 +1,5 @@
 <template>
-      <section class="mx-auto items-center flex flex-col justify-evenly space-y-2 min-h-screen max-w-7xl py-10 text-center">
+      <section class="mx-auto items-center flex flex-col justify-evenly space-y-5 min-h-screen max-w-7xl pt-12 pb-5 text-center">
 
         <div class="flex max-w-5xl flex-col items-center w-full font-lexend justify-center space-y-5 lg:space-y-10"
         >
@@ -37,12 +37,14 @@
 
         <div class="flex flex-col w-full space-y-5 py-2">
           <div class="font-lexend md:text-xl text-gray-800">Trusted by these companies</div>
-          <div class="flex overflow-x-auto scrollbar-hide md:flex-wrap md:justify-center w-full">
+          <div class="flex  scrollbar-hide flex-wrap justify-center w-full">
             <company-item label="Ankeboot Books" company=""/>
             <company-item label="Anbessa Betting" company="bo"/>
             <company-item label="BB Trading" company="bo"/>
-            <company-item label="Alpha Betting" company="bo"/>
             <company-item label="Bios College" company="bo"/>
+            <company-item label="Agezhale Trading" company="bo"/>
+            <company-item label="Alpha Betting" company="bo"/>
+            <company-item label="Derash Tech" company="bo"/>
           </div>
         </div>
       </section>
