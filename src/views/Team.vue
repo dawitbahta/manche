@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col lg:p-16 bg-gray-100">
     <div class="bg-gray-100 flex  justify-center mx-auto pt-10">
-    <div>
+    <div class="font-lexend">
       <p class="text-primary text-md text-center font-bold pb-3">BUILDING TEAM</p>
       <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-bold pb-6 sm:w-full w-5/6 mx-auto">The Talent Behind the Scenes</h1>
     </div>
@@ -16,7 +16,7 @@
                     <img :src="member.imageSrc" :alt="member.name+'photo'" role="img" class="rounded-full object-cover lg:w-28 w-20 shadow-md" />
                 </div>
                 <div class="px-6 pt-14  shadow-md bg-white rounded-md">
-                  <h1 class="font-bold text-3xl text-center mb-1">{{member.name}}</h1>
+                  <h1 class="font-bold text-3xl text-center mb-1 font-lexend">{{member.name}}</h1>
                   <p class="text-gray-800 text-sm text-center">{{member.title}}</p>
                   <p class="text-center text-gray-600 text-base pt-3 font-normal">{{member.roleDescription}}</p>
 

@@ -10,6 +10,7 @@
         md:flex md:justify-between md:items-center
         text-center
         font-semibold
+        font-lexend
         "
         :class="navBarStore.style"
 

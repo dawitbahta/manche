@@ -1,36 +1,56 @@
 <template>
-  <section class="items-center justify-center bg-secondary flex h-screen">
-    <img class="h-full w-full absolute" src="../assets/shapes/shape-16.svg" alt="Bg Shape" />
+      <section class="mx-auto items-center flex flex-col justify-evenly space-y-2 min-h-screen max-w-7xl py-10 text-center">
 
-    <div class="relative items-center h-full w-full px-2 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
-      <div class="max-w-4xl mx-auto  flex flex-col justify-evenly h-full text-center">
-        <div class="flex flex-col items-center space-y-10 w-full justify-center"
+        <div class="flex max-w-5xl flex-col items-center w-full font-lexend justify-center space-y-5 lg:space-y-10"
         >
-          <div class="font-semibold text-5xl w-11/12 tracking-wide leading-tight lg:text-8xl text-gray-50">Driving Ethiopia's  <span class="text-primary md:block">Digital Future</span></div>
+          <div class="text-5xl w-full px-2 lg:text-7xl flex flex-col items-center justify-center space-y-2 text-black font-semibold">
+            <span class="">
+              Driving Ethiopia's
+            </span>
+            <span class="relative whitespace-nowrap w-fit text-blue-600">
+  <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute left-0 top-2/3 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none">
+                <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                </path>
+              </svg>
+      <span class="relative">Digital Future</span>
+    </span>
+          </div>
 
-<!--          Mobile version-->
-          <p class="lg:hidden text-gray-50 text-xl w-11/12">
+
+          <!--          Mobile version-->
+          <p class="lg:hidden text-gray-700 w-11/12">
             With creativity and technology, we craft software solutions that redefine possibilities. Join us in forging a digital
-           <span class="bg-[#D6DEE7] text-black font-bold px-3 py-0.5 skew-x-5">
-             ETHIOPIA!</span>
+
+            ETHIOPIA!
           </p>
 
-<!--          Desktop version-->
-          <p class="max-w-xl mx-auto mt-8 text-2xl font-light text-gray-50 hidden md:inline-block">
+          <!--          Desktop version-->
+          <p class="max-w-4xl mx-auto mt-8 text-xl text-gray-800 hidden md:inline-block">
             At Rigel, we blend innovation and technology to craft software solutions that catalyze growth and drive progress. Join us on this digital journey to transform ideas into realities and create a technologically empowered
-             ETHIOPIA!
+            ETHIOPIA!
           </p>
         </div>
-        <div class="flex flex-col justify-center  gap-3 mx-auto w-10/12  mt-10 sm:flex-row">
+
+        <div class="flex max-w-5xl flex-col justify-center gap-3 mx-auto  w-10/12 sm:flex-row">
           <a href="#about" class=" focus:outline-none inline-flex items-center font-semibold justify-center rounded-3xl bg-primary text-white duration-200 lg:w-3/12 px-6 py-3 text-center w-full">Why Rigel?</a>
         </div>
-      </div>
-    </div>
-  </section>
+
+        <div class="flex flex-col w-full space-y-5 py-2">
+          <div class="font-lexend md:text-xl text-gray-800">Trusted by these companies</div>
+          <div class="flex overflow-x-auto scrollbar-hide md:flex-wrap md:justify-center w-full">
+            <company-item label="Ankeboot Books" company=""/>
+            <company-item label="Anbessa Betting" company="bo"/>
+            <company-item label="BB Trading" company="bo"/>
+            <company-item label="Alpha Betting" company="bo"/>
+            <company-item label="Bios College" company="bo"/>
+          </div>
+        </div>
+      </section>
 </template>
 
 <script setup>
 import AOS from "aos";
+import CompanyItem from "../components/CompanyItem.vue";
 AOS.init();
 
 
@@ -40,3 +60,14 @@ AOS.init({
   duration: 1600,
 });
 </script>
+
+<style>
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* for Internet Explorer and Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+</style>

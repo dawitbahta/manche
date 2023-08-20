@@ -1,17 +1,16 @@
 <template>
 <div class="h-auto pt-1 pb-10 bg-gray-100">
   <section data-aos="fade-up" aria-labelledby="feature-five" id="feature-five" class="overflow-y-auto bg-gray-100 lg:h-screen">
-    <div class="px-8 py-24 mx-auto  lg:px-16 max-w-7xl md:px-12 xl:px-36 lg:flex">
-      <div class="lg:w-1/2">
-        <div class="top-0 pt-8 pb-16 lg:sticky">
-          <div>
+    <div class="px-8 py-8 md:py-24 mx-auto  lg:px-16 max-w-7xl md:px-12 xl:px-36 lg:flex">
+
+        <div class="top-0 lg:pt-8 lg:w-1/2 pb-16 lg:sticky">
             <div class="lg:pr-24 md:pr-12">
               <div>
-                <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                <p class="text-3xl font-medium font-lexend tracking-tight text-black sm:text-4xl">
                   The Rigel Mindset
                 </p>
 
-                <div class="flex flex-col space-y-3 max-w-xl mt-4 text-lg tracking-tight text-gray-600">
+                <div class="flex flex-col space-y-3 max-w-xl mt-4 md:text-lg tracking-tight text-gray-600">
 
                 <p class="">
                   We are visionaries and innovators who believe that technology can shape Ethiopia's future.</p>
@@ -34,8 +33,6 @@
                 </a>
               </div>
             </div>
-          </div>
-        </div>
       </div>
       <div class="lg:w-1/2">
         <div class="flex-shrink-0">
@@ -45,7 +42,7 @@
                 <div>
                   <div class="flex items-center space-x-4 rounded-xl">
                     <img :src="specialization.imageSrc" class="w-10">
-                    <p class="text-lg font-medium leading-6 text-black">
+                    <p class="text-lg font-medium font-lexend leading-6 text-black">
                       {{specialization.title}}
                     </p>
                   </div>

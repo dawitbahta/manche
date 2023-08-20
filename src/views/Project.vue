@@ -7,7 +7,7 @@
 
 
     <div  class="flex min-h-screen h-screen flex-col space-y-2 justify-evenly py-10 sm:py-2 md:py-4 ">
-      <h1 class="xl:text-4xl flex items-center justify-center w-full text-3xl text-center font-extrabold  uppercase ">Our Projects</h1>
+      <h1 class="xl:text-4xl flex items-center justify-center w-full text-3xl text-center font-extrabold font-lexend  uppercase ">Our Projects</h1>
 
 
       <div
@@ -33,7 +33,7 @@
                class="text-xs uppercase font-normal py-1 tracking-tight sm:text-xl">{{ currentProject.category }}
            </p>
            <p
-               class="text-2xl tracking-tight font-bold sm:text-5xl">{{currentProject.name }}
+               class="text-2xl tracking-tight font-bold sm:text-5xl font-lexend">{{currentProject.name }}
            </p>
             </span>
            <p
@@ -45,7 +45,7 @@
               :to="currentProject.link"
               :href="currentProject.link"
               class="flex underline underline-offset-4 cursor-pointer h-12 justify-left w-11/12 lg:w-full lg:max-w-xl xl:max-w-2xl"
-          ><span class="z-50 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
+          ><span class="z-40 hover:font-medium  text-white text-xs lg:text-base  lg:font-light cursor-pointer flex items-center justify-center">
             MORE
            <box-icon name="right-arrow-alt" class="fill-white"></box-icon>
           </span>

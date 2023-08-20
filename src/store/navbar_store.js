@@ -1,13 +1,12 @@
 import { defineStore } from "pinia";
-import {customRef} from "vue";
 
 export const useNavBarStore = defineStore({
     id: "navbar",
     state: () => ({
-        style: 'bg-secondary text-white',
-        secondaryStyle: 'fill-gray-100 text-gray-100',
+        style: 'bg-white text-black',
+        secondaryStyle: 'fill-gray-700 text-gray-700',
         logoStyle:"text-primary",
-        menuStyle: 'bg-secondary text-white',
+        menuStyle: 'bg-white text-black',
         menuButtonStyle: 'fill-primary',
         showNavBar: false,
         showMenu: false,
@@ -63,9 +62,8 @@ export const useNavBarStore = defineStore({
         setMenuTheme() {
             switch (this.currentPage) {
                 case "home":
-
-                    this.setMenuProperty('bg-secondary text-purple-50', 'fill-primary');
-                    this.setNavBarTheme('bg-secondary text-purple-50', 'text-purple-50 fill-purple-50', 'text-primary');
+                    this.setMenuProperty('bg-white text-black', 'fill-primary');
+                    this.setNavBarTheme('bg-white text-black', 'text-black fill-black', 'text-primary');
                     break;
                 case "about":
                     this.setMenuProperty('bg-gray-100 text-black', 'fill-black');
