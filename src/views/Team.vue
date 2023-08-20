@@ -76,7 +76,7 @@ const teamMembers = [
     imageSrc:placeHolder,
     name:"Kalid Abdu",
     title:"CEO | Board Member | Project Manager",
-    roleDescription:"Software Engineer with 7+ years in leadership roles, CTO experiences at top firms,experience working with international clients, now leading rigel to new heights.",
+    roleDescription:"With 7+ years of software development expertise, CTO roles, and international client collaboration, now steering Rigel to new heights",
     linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
     github:"https://github.com/Kalid10",
     upwork:"https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
