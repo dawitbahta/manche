@@ -7,8 +7,12 @@ export default {
   theme: {
     extend: {
         colors: {
-            'primary': '#7148FC',
+            'primary': '#2463eb',
             'secondary': '#0C121C',
+        },
+        fontFamily: {
+            'sans': ['Inter'],
+            'lexend': ['Lexend'],
         }
     },
   },
