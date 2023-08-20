@@ -76,7 +76,7 @@ const teamMembers = [
     imageSrc:placeHolder,
     name:"Kalid Abdu",
     title:"CEO | Board Member | Project Manager",
-    roleDescription:"With 7+ years of software development expertise, CTO roles, and international client collaboration, now steering Rigel to new heights",
+    roleDescription:"With 7+ years of software development expertise, CTO roles, and international client collaboration, now steering Rigel to new heights.",
     linkedIn:"https://www.linkedin.com/in/kalid-abdu-871a0422a/",
     github:"https://github.com/Kalid10",
     upwork:"https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
@@ -113,12 +113,19 @@ const teamMembers = [
     location:"Ethiopia"
 
   },
-
+  {
+    name:"Addismiraph Abebe ",
+    imageSrc:placeHolder,
+    title:"Sales and Marketing Director | Board Member",
+    roleDescription:"A sales and marketing expert with a proven track record of success in the tech industry. Addismiraph's strategic insights and leadership skills are invaluable to our team.",
+    linkedIn:"https://www.linkedin.com/in/eyouel-ayalew-kenfu/",
+    location:"Ethiopia"
+  },
   {
     name:"Banchialem Maru",
     imageSrc:placeHolder,
     title:"Board Member | Strategic Advisor | Investor ",
-    roleDescription:"A visionary and empathetic leader who is passionately dedicated to helping others achieve their goals. With an unwavering commitment to consistently inspiring and empowering those around",
+    roleDescription:"A visionary and empathetic leader who is passionately dedicated to helping others achieve their goals. With an unwavering commitment to consistently inspiring and empowering those around.",
     location:"Ethiopia"
   },
   {
@@ -132,30 +139,29 @@ const teamMembers = [
     name:"Bereket Gobeze",
     imageSrc:bereket,
     title:"Senior Software Engineer | Technical Advisor",
-    roleDescription:"An accomplished senior software engineer and former Anbessa Tech CEO, now an advisor and senior software engineer at our company, driving technological excellence and strategic growth.",
+    roleDescription:"An accomplished senior software engineer and former Anbessa Tech CEO, now an advisor and senior software engineer at our company, driving technological excellence.",
     linkedIn:"https://www.linkedin.com/in/bereket-gobeze/",
     github:"https://github.com/bereketnyb",
     location:"Ethiopia"
   },
   {
+    name:"Eyouel Kenfu ",
+    imageSrc:eyouel,
+    title:"Advisor | Software Engineer",
+    roleDescription:"Former META Operations Specialist, highly experienced full-stack engineer specializing in Laravel and Vue.js, now working at Rigel as a senior software engineer focusing on security and performance.",
+    linkedIn:"https://www.linkedin.com/in/eyouel-ayalew-kenfu/",
+    github:"https://github.com/yosef-seboka",
+    location:"USA"
+  },
+  {
     name:"Haben Amare",
     imageSrc:haben,
     title:"Senior Software Engineer | Technical Advisor",
-    roleDescription:"Haben is an accomplished senior software engineer, leading teams and nurturing innovation. His expertise boosts the company's growth and drives us towards success.",
+    roleDescription:"Haben, a seasoned software engineer at Rigel, serves as the Senior Database Architect, focusing on server management, configuration, security measures, DevOps, and test automation strategies.",
     linkedIn:"https://www.linkedin.com/in/haben/",
     github:"https://github.com/habenamare",
     location:"Portugal"
   },
-  {
-    name:"Eyouel Kenfu ",
-    imageSrc:eyouel,
-    title:"Advisor | Software Engineer",
-    roleDescription:"Experienced Global Operations Specialist at META (Facebook), With a Bachelor's degree in Computer Science and proficiency in languages such as SQL, Java, Laravel, and React JS. ",
-    linkedIn:"https://www.linkedin.com/in/eyouel-ayalew-kenfu/",
-    github:"https://github.com/yosef-seboka",
-    location:"Ireland"
-  },
-
   {
     name:"Beka Haile",
     imageSrc:beka,
