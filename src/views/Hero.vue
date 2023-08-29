@@ -36,7 +36,7 @@
         </div>
 
         <div class="flex flex-col w-full space-y-5 py-2">
-          <div class="font-lexend md:text-xl text-gray-800">Trusted by these companies</div>
+          <div class="font-lexend font-bold italic md:not-italic md:text-xl text-gray-800">Trusted by these companies</div>
           <div class="flex  scrollbar-hide flex-wrap justify-center w-full">
             <company-item label="Ankeboot Books" company=""/>
             <company-item label="Anbessa Betting" company="bo"/>
