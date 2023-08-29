@@ -44,7 +44,8 @@
             <company-item label="Bios College" company="bo"/>
             <company-item label="Agezhale Trading" company="bo"/>
             <company-item label="Alpha Betting" company="bo"/>
-            <company-item label="Derash Tech" company="bo"/>
+            <company-item label="AIA" company="bo"/>
+            <company-item label="Universal PLC" company="bo"/>
           </div>
         </div>
       </section>
