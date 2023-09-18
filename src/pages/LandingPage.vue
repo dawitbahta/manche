@@ -50,7 +50,7 @@ const handleScroll = () => {
 
   if (scrollPosition >= homePosition && scrollPosition < aboutPosition) {
      navBarStore.currentPage = 'home';
-    navBarStore.setNavBarTheme('bg-white text-black', 'text-gray-700 fill-gray-700', 'text-primary')
+    navBarStore.setNavBarTheme('bg-black text-gray-100', 'text-gray-100 fill-gray-700', 'text-primary')
   } else if (scrollPosition >= aboutPosition && scrollPosition < projectsPosition) {
     navBarStore.currentPage = 'about';
     navBarStore.setNavBarTheme('bg-gray-100 text-black', 'text-black fill-black', 'text-primary');

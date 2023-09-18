@@ -3,8 +3,8 @@ import { defineStore } from "pinia";
 export const useNavBarStore = defineStore({
     id: "navbar",
     state: () => ({
-        style: 'bg-white text-black',
-        secondaryStyle: 'fill-gray-700 text-gray-700',
+        style: 'bg-black text-black',
+        secondaryStyle: 'fill-gray-700 text-gray-100',
         logoStyle:"text-primary",
         menuStyle: 'bg-white text-black',
         menuButtonStyle: 'fill-primary',
