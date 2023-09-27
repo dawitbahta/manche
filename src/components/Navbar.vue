@@ -76,14 +76,14 @@
       >
         <a v-if="!isOnSubRoute" v-for="(section,index) in sections" :key="index"
            :href="section.linkId"
-            class="text-md hover:border-b-2 hover:font-bold uppercase"
+            class="text-md hover:border-b-2 font-medium hover:font-bold uppercase"
            :class="'border-' + navBarStore.secondaryStyle"
              @click="scrollToSection($event, section.linkId);"
         >
           {{ section.name }}
         </a>
 
-        <a v-if="isOnSubRoute" href="#contact" class="uppercase hover:text-primary" @click="navBarStore.toggleNavBar()">
+        <a v-if="isOnSubRoute" href="#contact" class="uppercase hover:text-primary " @click="navBarStore.toggleNavBar()">
 
           Contact
         </a>
