@@ -77,7 +77,7 @@
 
       <!--      Desktop Version-->
       <div
-        class="hidden md:flex w-5/12 bg-image h-full flex items-center justify-center"
+        class="hidden md:flex w-5/12 bg-image h-full items-center justify-center"
       >
         <img
           alt="Rigel Star"
