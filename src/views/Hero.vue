@@ -60,7 +60,7 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row max-w-5xl md:space-x-10 justify-center gap-3 mx-auto w-10/12"
+          class="flex flex-col space-y-3 md:space-y-0 md:flex-row max-w-5xl py-2 md:space-x-10 justify-center gap-3 mx-auto w-10/12"
         >
           <a
             class="focus:outline-none inline-flex items-center font-semibold justify-center rounded-lg bg-blue-600 hover:bg-black hover:border-2 hover:border-primary text-white duration-200 lg:w-4/12 px-6 py-2 text-center w-full"
