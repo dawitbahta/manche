@@ -68,7 +68,7 @@
       <img
         alt="Rigel Star"
         class="hidden md:flex w-4/12 object-none rounded-full h-4/6 glow"
-        src="../assets/hero/hero3.png"
+        src="../assets/hero/rigel.png"
       />
     </div>
 
@@ -175,7 +175,7 @@ onMounted(() => {
 
 .glow {
   box-shadow:
-    0 0 10px #fff,
+    0 0 10px #23e0fd,
     0 0 20px #23e0fd,
     0 0 30px #08f,
     0 0 40px #08f,
