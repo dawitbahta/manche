@@ -3,19 +3,8 @@
     class="mx-auto bg-image items-center flex flex-col justify-between bg-black space-y-5 min-h-screen h-screen pt-12 text-center"
   >
     <div
-      class="w-11/12 h-5/6 items-center md:flex-row flex-col space-y-3 md:space-y-0 flex justify-between"
+      class="w-11/12 h-full py-3 items-center md:flex-row flex-col space-y-3 md:space-y-0 flex justify-evenly"
     >
-      <!--      Mobile Version-->
-      <div
-        class="w-11/12 lg:hidden bg-image h-full flex items-center justify-center"
-      >
-        <img
-          alt="Rigel Star"
-          class="object-fill h-4/6"
-          src="../assets/hero/hero3.png"
-        />
-      </div>
-
       <!--          Left section-->
       <div
         class="w-full md:w-7/12 flex flex-col space-y-5 md:space-y-0 items-center justify-evenly h-full"
