@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mx-auto items-center flex flex-col justify-between bg-black space-y-5 md:h-screen min-h-screen pt-12 text-center"
+    class="mx-auto bg-image items-center flex flex-col justify-between bg-black space-y-5 min-h-screen h-screen pt-12 text-center"
   >
     <div
       class="w-11/12 h-5/6 items-center md:flex-row flex-col space-y-3 md:space-y-0 flex justify-between"
@@ -152,7 +152,7 @@ onMounted(() => {
 }
 
 .bg-image {
-  background-image: url("../assets/hero/constellation.png");
+  background-image: url("../assets/dark_star.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
