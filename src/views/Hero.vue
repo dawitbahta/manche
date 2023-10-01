@@ -7,10 +7,10 @@
     >
       <!--          Left section-->
       <div
-        class="w-full md:w-7/12 flex flex-col space-y-5 md:space-y-0 items-center justify-evenly h-full"
+        class="w-full md:w-7/12 flex flex-col space-y-5 md:space-y-0 items-center justify-evenly min-h-full"
       >
         <div
-          class="flex max-w-5xl flex-col items-center w-full font-lexend justify-center space-y-5 lg:space-y-10"
+          class="flex max-w-5xl flex-col items-center w-full font-lexend justify-center space-y-8 lg:space-y-10"
         >
           <div
             class="text-5xl w-full px-2 lg:text-7xl flex flex-col items-center justify-center space-y-2 text-white font-semibold"
@@ -39,7 +39,7 @@
 
           <!--          Desktop version-->
           <p
-            class="max-w-4xl mx-auto mt-8 text-lg text-gray-400 font-light hidden md:inline-block"
+            class="max-w-3xl mx-auto mt-8 text-lg text-gray-400 font-light hidden md:inline-block"
           >
             At Rigel, we blend innovation and technology to craft software
             solutions that catalyze growth and drive progress. Join us on this
@@ -65,15 +65,11 @@
       </div>
 
       <!--      Desktop Version-->
-      <div
-        class="hidden md:flex w-5/12 bg-image h-full items-center justify-center"
-      >
-        <img
-          alt="Rigel Star"
-          class="object-fill"
-          src="../assets/hero/hero3.png"
-        />
-      </div>
+      <img
+        alt="Rigel Star"
+        class="hidden md:flex w-4/12 object-none rounded-full h-4/6 glow"
+        src="../assets/hero/hero3.png"
+      />
     </div>
 
     <div class="flex flex-col w-full space-y-5 py-2 bg-gray-900">
@@ -145,5 +141,46 @@ onMounted(() => {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 10px #fff,
+      0 0 20px #23e0fd,
+      0 0 30px #08f,
+      0 0 40px #08f,
+      0 0 50px #08f,
+      0 0 60px #08f;
+  }
+  50% {
+    box-shadow:
+      0 0 20px #fff,
+      0 0 30px #23e0fd,
+      0 0 40px #08f,
+      0 0 50px #08f,
+      0 0 60px #08f,
+      0 0 70px #08f;
+  }
+  100% {
+    box-shadow:
+      0 0 10px #fff,
+      0 0 20px #23e0fd,
+      0 0 30px #08f,
+      0 0 40px #08f,
+      0 0 50px #08f,
+      0 0 60px #08f;
+  }
+}
+
+.glow {
+  box-shadow:
+    0 0 10px #fff,
+    0 0 20px #23e0fd,
+    0 0 30px #08f,
+    0 0 40px #08f,
+    0 0 50px #08f,
+    0 0 60px #08f;
+  animation: pulse 2s infinite;
 }
 </style>
