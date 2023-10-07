@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-50 relative">
-    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 z-20">
+  <div class="bg-white relative">
+    <div class="mx-auto w-10/12 px-4 py-16 sm:px-6 lg:px-8 z-20">
       <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
         <div class="lg:col-span-2 lg:py-12">
           <div class="py-6 md:py-0 md:px-6">
@@ -11,15 +11,14 @@
               >
             </h1>
             <p class="pt-2 pb-4">
-              Contact us today. Let's connect and discuss how we can assist you.
-              Get in touch now!
+              Let's connect and discuss how we can assist you. Get in touch now!
             </p>
 
-            <ContactInfo></ContactInfo>
+            <ContactInfo />
           </div>
         </div>
         <div
-          class="rounded-l z-20 p-5 bg-white shadow-sm lg:col-span-3 lg:p-12"
+          class="rounded-xl z-20 p-5 bg-gray-50 shadow-sm lg:col-span-3 lg:p-12"
         >
           <form class="space-y-4" @submit.prevent="submitForm">
             <div>

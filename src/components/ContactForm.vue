@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-600">
+  <div>
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 z-20">
       <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
         <div
