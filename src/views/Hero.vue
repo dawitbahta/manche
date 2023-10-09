@@ -67,7 +67,7 @@
       <!--      Desktop Version-->
       <img
         alt="Rigel Star"
-        class="hidden md:flex w-[47rem] h-[47rem] bg-red-400 object-none rounded-full glow"
+        class="hidden md:flex w-[47rem] h-[47rem] bg-primary object-none rounded-full glow"
         src="../assets/hero/rigel.png"
       />
     </div>
