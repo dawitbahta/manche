@@ -67,7 +67,7 @@
       <!--      Desktop Version-->
       <img
         alt="Rigel Star"
-        class="hidden md:flex w-[42rem] h-[42rem] bg-primary object-none rounded-full glow"
+        class="hidden md:flex w-[42rem] h-[42rem] bg-primary/50 object-none rounded-full glow"
         src="../assets/hero/rigel.png"
       />
     </div>
@@ -87,10 +87,11 @@
         <company-item company="bo" label="Anbessa Betting"></company-item>
         <company-item company="bo" label="BB Trading"></company-item>
         <company-item company="bo" label="Bios College"></company-item>
-        <company-item company="bo" label="Agezhale Trading"></company-item>
+        <company-item company="bo" label="Maraki Fitness"></company-item>
         <company-item company="bo" label="Alpha Betting"></company-item>
         <company-item company="bo" label="AIA"></company-item>
         <company-item company="bo" label="Universal PLC"></company-item>
+        <company-item company="bo" label="Agezhale Trading"></company-item>
       </div>
     </div>
   </section>
