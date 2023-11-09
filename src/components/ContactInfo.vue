@@ -4,18 +4,11 @@
       Contact Info
     </div>
     <p class="font-semibold">
-      Phone: <span class="font-normal text-gray-800">+251711401455</span>
+      Phone: <span class="font-normal text-gray-800">+44 7376 342539</span>
     </p>
     <p class="font-semibold">
-      Email: <span class="font-normal text-gray-800">contact@rigel.studio</span>
-    </p>
-    <p class="font-semibold">
-      Address:
-      <span class="font-normal text-gray-800"
-        >2Q48+GHQ Bitweded Bahiru Abreham Tower, Bole Road, Addis Ababa,
-        Ethiopia</span
-      >
-    </p>
+      Email: <span class="font-normal text-gray-800">contact@Manche.studio</span>
+    </p> 
   </div>
 </template>
 

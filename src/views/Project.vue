@@ -74,7 +74,7 @@
 import AOS from "aos";
 import {nextTick, onMounted, ref} from "vue";
 import ankeboot from "../assets/projects/ankeboot.png";
-import rigelSMS from "../assets/projects/rigel.png"
+import MancheSMS from "../assets/projects/Manche.png"
 import tutor from "../assets/projects/tutor.png"
 import betPlus from "../assets/projects/betPlus.png";
 import anbessa from "../assets/projects/anbessa.png";
@@ -92,11 +92,11 @@ const navBarStore = useNavBarStore();
 const projects = [
   {
     id:1,
-    name:"Rigel School Management",
+    name:"Manche School Management",
     theme:"purple",
     category:"Web and Mobile app",
     description:"A groundbreaking platform seamlessly integrating AI into classrooms. Experience personalized teaching support and tailored assessments through our AI-Integrated Lesson Plans and Question Generator. Gain real-time insights into student performance with Live Grade Reports and Rankings, while promoting accountability and a holistic view of behavior through Real-Time Absentee Recording and Inclusive Conduct Assessment.",
-    ImageSrc:rigelSMS,
+    ImageSrc:MancheSMS,
     link:"/SMS"
   },
   {

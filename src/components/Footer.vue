@@ -6,7 +6,7 @@
       <span class="mx-auto mt-2 text-sm text-center text-gray-600">
         © {{ copyrightDate }}
         <span class="text-black font-semibold">
-          rigel.<span class="text-primary">studio.</span>
+          Manche.<span class="text-primary">studio.</span>
           <span class="font-normal text-gray-600"> All rights reserved. </span>
         </span>
       </span>

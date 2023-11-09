@@ -4,7 +4,7 @@
       <div>
         <div class="relative text-center">
           <p class="mt-8 text-3xl font-bold text-purple-500 md:text-6xl">
-            RIGEL <span class="md:block text-black font-bold">School management system</span>
+            Manche <span class="md:block text-black font-bold">School management system</span>
           </p>
           <p class="max-w-xl mx-auto mt-4 text-sm text-slate-600">
             Experience innovation with our dynamic school management platform, tailored for the Ethiopian community. Using AI-assisted support, reshape your educational journey. Together, let's inspire and redefine learning.  </p>
@@ -31,7 +31,7 @@
             </filter>
           </defs>
         </svg>
-        <img class="relative object-cover w-full rounded " alt="rigel-screenshot" src="../../assets/projects/rigelSMS/rigelSMS.png">
+        <img class="relative object-cover w-full rounded " alt="Manche-screenshot" src="../../assets/projects/MancheSMS/MancheSMS.png">
       </div>
 
     </div>

@@ -29,7 +29,7 @@
           "
             :class="navBarStore.secondaryStyle"
         >
-          rigel.<span :class="navBarStore.logoStyle">studio</span>
+          Manche.<span :class="navBarStore.logoStyle">studio</span>
 
       </router-link>
 

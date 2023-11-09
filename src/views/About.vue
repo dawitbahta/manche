@@ -7,7 +7,7 @@
             <div class="lg:pr-24 md:pr-12">
               <div>
                 <p class="text-3xl font-medium font-lexend tracking-tight text-black sm:text-4xl">
-                  The Rigel Mindset
+                  The Manche Mindset
                 </p>
 
                 <div class="flex flex-col space-y-3 max-w-xl mt-4 md:text-lg tracking-tight text-gray-600">
@@ -23,7 +23,7 @@
                   We listen first, then innovate. Understanding people's needs is the foundation on which we build the future.
                 </p>
 
-                <p>We are Rigel Studio - rooted in Ethiopia, soaring to the stars, and always pushing the boundaries of what is possible.</p>
+                <p>We are Manche Studio - rooted in Ethiopia, soaring to the stars, and always pushing the boundaries of what is possible.</p>
 
                 </div>
               </div>

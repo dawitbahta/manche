@@ -41,7 +41,7 @@
           <p
             class="max-w-3xl mx-auto mt-8 text-lg text-gray-400 font-light hidden md:inline-block"
           >
-            At Rigel, we blend innovation and technology to craft software
+            At Manche, we blend innovation and technology to craft software
             solutions that catalyze growth and drive progress. Join us on this
             digital journey to transform ideas into realities and create a
             technologically empowered ETHIOPIA!
@@ -54,7 +54,7 @@
           <a
             class="focus:outline-none inline-flex items-center font-semibold justify-center rounded-lg bg-blue-600 hover:bg-black hover:border-2 hover:border-primary text-white duration-200 lg:w-4/12 px-6 py-2 text-center w-full"
             href="#about"
-            >Why Rigel?</a
+            >Why Manche?</a
           >
           <a
             class="focus:outline-none inline-flex items-center justify-center rounded-lg border-2 hover:text-white border-primary text-white font-bold duration-200 lg:w-4/12 px-6 py-2 hover:bg-primary cursor-pointer text-center w-full"
@@ -66,9 +66,9 @@
 
       <!--      Desktop Version-->
       <img
-        alt="Rigel Star"
+        alt="Manche Star"
         class="hidden md:flex w-[42rem] h-[42rem] bg-primary/50 object-none rounded-full glow"
-        src="../assets/hero/rigel.png"
+        src="../assets/hero/Manche.png"
       />
     </div>
 

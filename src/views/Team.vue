@@ -106,17 +106,9 @@
 
 <script setup>
 import AOS from "aos";
-import { onMounted } from "vue";
-import adil from "../assets/teams/adil.jpeg";
-import beka from "../assets/teams/bekaHaile.jpeg";
-import yosef from "../assets/teams/yosefSeboka.jpeg";
-import biniyam from "../assets/teams/biniyamLemma.jpeg";
-import eyouel from "../assets/teams/eyouelKenfu.jpeg";
-import firaol from "../assets/teams/firaolDida.jpeg";
-import bereket from "../assets/teams/bereketGobeze.jpeg";
-import haben from "../assets/teams/habenAmare.jpeg";
-import placeHolder from "../assets/teams/placeHolder.png";
-import addis from "../assets/teams/addis.jpeg";
+import { onMounted } from "vue";  
+import eyouel from "../assets/teams/eyouelKenfu.jpeg"; 
+import dawit from "../assets/teams/dawit.jpg"; 
 
 onMounted(() => {
   AOS.init({
@@ -126,125 +118,22 @@ onMounted(() => {
 
 const teamMembers = [
   {
-    imageSrc: placeHolder,
-    name: "Kalid Abdu",
+    imageSrc: dawit,
+    name: "Dawit Bahta",
     title: "CEO | Board Member | Project Manager",
     roleDescription:
-      "With 7+ years of software development expertise, CTO roles, and international client collaboration, now steering Rigel to new heights.",
-    linkedIn: "https://www.linkedin.com/in/kalid-abdu-871a0422a/",
-    github: "https://github.com/Kalid10",
-    upwork:
-      "https://www.upwork.com/freelancers/~01941e5442f9956d70?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01941e5442f9956d70%2Fprofile",
-    location: "Ethiopia",
+      "4+ experience in web and app developing, BSC in computer science, HND in networking and database",  
+   location: "UK",
   },
   {
-    imageSrc: adil,
-    name: "Adil Abdu",
-    title: "CTO | Board Member | Technical Lead",
-    roleDescription:
-      "Our CTO is the lead author on an IEEE Access publication on unsupervised machine learning algorithms, involved in internationally nominated projects.",
-    linkedIn: "http://www.linkedin.com/in/yosefseboka",
-    github: "https://github.com/adilabdu",
-    upwork: "https://www.upwork.com/freelancers/~012639c223643a15e8",
-    location: "Ethiopia",
-  },
-
-  {
-    imageSrc: biniyam,
-    name: "Biniyam Lemma ",
-    title: "Full Stack Developer | Board Member | COO",
-    roleDescription:
-      "As a dynamic leader and skilled full-stack developer, Biniyam's strategic insights and technical expertise drive our company's success and growth.",
-    linkedIn: "https://www.linkedin.com/in/biniyam-lemma-2a580615a/",
-    github: "https://github.com/biniya",
-    location: "Ethiopia",
-  },
-  {
-    imageSrc: yosef,
-    name: "Yosef Seboka ",
-    title: "Analytics Lead | Board Member | Developer",
-    roleDescription:
-      "An analyst with a strong engineering background adeptly devises innovative approaches to drive growth and enhance operational efficiency.",
-    linkedIn: "https://www.linkedin.com/in/yosefseboka",
-    github: "https://github.com/yosef-seboka",
-    location: "Ethiopia",
-  },
-  {
-    imageSrc: addis,
-    name: "Addismiraph Abebe ",
-    title: "Sales and Marketing Director | Board Member",
-    roleDescription:
-      "A sales and marketing expert with a proven track record of success in the tech industry. Addismiraph's strategic insights and leadership skills are invaluable to our team.",
-    linkedIn: "https://www.linkedin.com/in/addismiraph/",
-    location: "Ethiopia",
-  },
-  {
-    name: "Banchialem Maru",
-    imageSrc: placeHolder,
-    title: "Board Member | Strategic Advisor | Investor ",
-    roleDescription:
-      "A visionary and empathetic leader who is passionately dedicated to helping others achieve their goals. With an unwavering commitment to consistently inspiring and empowering those around.",
-    location: "Ethiopia",
-  },
-  {
-    name: "Thomas Melesse",
-    imageSrc: placeHolder,
-    title: "Board Member | Strategic Advisor | Investor",
-    roleDescription:
-      "A keen investor who brings his sharp business acumen to our team. Thomas' strategic investments and insights significantly contribute to the company's ongoing success.",
-    location: "Ethiopia",
-  },
-  {
-    name: "Bereket Gobeze",
-    imageSrc: bereket,
-    title: "Senior Software Engineer | Technical Advisor",
-    roleDescription:
-      "An accomplished senior software engineer and former Anbessa Tech CEO, now an advisor and senior software engineer at our company, driving technological excellence.",
-    linkedIn: "https://www.linkedin.com/in/bereket-gobeze/",
-    github: "https://github.com/bereketnyb",
-    location: "Ethiopia",
-  },
-  {
-    name: "Eyouel Kenfu ",
     imageSrc: eyouel,
-    title: "Advisor | Software Engineer",
+    name: "Eyouel Kenfu",
+    title: "CTO",
     roleDescription:
-      "Former META Operations Specialist, highly experienced full-stack engineer specializing in Laravel and Vue.js, now working at Rigel as a senior software engineer focusing on security and performance.",
-    linkedIn: "https://www.linkedin.com/in/eyouel-ayalew-kenfu/",
-    github: "https://github.com/yosef-seboka",
+      "Our CTO experienced in Global operations as Risk Prevention Market Data Specialist(Africa) at META (Facebook)",
+    github: "https://github.com/eyouelaya", 
     location: "USA",
   },
-  {
-    name: "Haben Amare",
-    imageSrc: haben,
-    title: "Senior Software Engineer | Technical Advisor",
-    roleDescription:
-      "Haben, a seasoned software engineer at Rigel, serves as the Senior Database Architect, focusing on server management, configuration, security measures, DevOps, and test automation strategies.",
-    linkedIn: "https://www.linkedin.com/in/haben/",
-    github: "https://github.com/habenamare",
-    location: "Portugal",
-  },
-  {
-    name: "Beka Haile",
-    imageSrc: beka,
-    title: " Backend Developer | Technical Advisor ",
-    roleDescription:
-      "Experienced Software Engineer with a demonstrated history of working in the IT and services industry. Skilled in Flutter, React Js, Java, Android Development, web development and CI/CD.",
-    linkedIn: "https://www.linkedin.com/in/beka-haile-589793195/",
-    github: "https://github.com/BekaHaile",
-    location: "UAE",
-  },
-  {
-    name: "Firaol Dida",
-    imageSrc: firaol,
-    title: "Frontend Developer | Technical Advisor",
-    roleDescription:
-      "Results-oriented full stack developer with 5+ years of experience, holding a degree in Computer Science and a Master's in Bioinformatics. With a proven track record of success in software development.",
-    linkedIn: "https://www.linkedin.com/in/firaol-dida-150278156/",
-    github: "https://github.com/yosef-seboka",
-    upwork:
-      "https://www.upwork.com/freelancers/~01ccb2d02064d3492d?referrer_url_path=%2Fab%2Fprofiles%2Fsearch%2Fdetails%2F~01ccb2d02064d3492d%2Fprofile",
-    location: "Ethiopia",
-  },
+  
 ];
 </script>

@@ -7,7 +7,7 @@
 <script setup>
 import Hero from '../views/SMS/Hero.vue';
 import Feature from '../views/SMS/Feature.vue';
-import Contact from "../views/SMS//Contact.vue";
+import Contact from "../views/SMS/Contact.vue";
 import {onMounted} from "vue";
 import {useNavBarStore} from "../store/navbar_store.js";
 
@@ -19,4 +19,3 @@ onMounted(() => {
 </script>
 <style scoped>
 </style>
-te>

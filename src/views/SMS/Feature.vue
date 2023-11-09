@@ -5,10 +5,10 @@
       <div>
         <div class="max-w-2xl">
           <p class="text-2xl font-bold tracking-tight text-purple-500 sm:text-4xl">
-            RIGEL
+            Manche
           </p>
           <p class="max-w-2xl lg:mt-4 mt-2 text-sm lg:text-sm font-light tracking-tight text-gray-500">
-            {{rigelDescription}}
+            {{MancheDescription}}
           </p>
         </div>
       </div>
@@ -93,8 +93,8 @@
 <script setup>
 import AOS from "aos";
 import { onMounted, ref} from "vue";
-import RigelDesktop from "../../assets/projects/rigelSMS/rigelSMS.png";
-import RigelMobile from "../../assets/projects/rigelSMS/mobile.png";
+import MancheDesktop from "../../assets/projects/MancheSMS/MancheSMS.png";
+import MancheMobile from "../../assets/projects/MancheSMS/mobile.png";
 
 import aiIcon from '../../assets/icons/features/ai.svg';
 import attendanceIcon from '../../assets/icons/features/attendance.svg';
@@ -111,7 +111,7 @@ onMounted(() => {
   });
 })
 
-const rigelDescription = "Rigel is one of Rigel Studio's groundbreaking software products designed to address numerous challenges in the field of education. With a robust set of features and an intuitive user interface, Rigel aims to revolutionize the way we approach learning and teaching."
+const MancheDescription = "Manche is one of Manche Studio's groundbreaking software products designed to address numerous challenges in the field of education. With a robust set of features and an intuitive user interface, Manche aims to revolutionize the way we approach learning and teaching."
 const features = [
   {
     id:1,
@@ -184,12 +184,12 @@ const featureDetails =[
     id:1,
     title: "Web App",
     description:"Experience a revolutionary web application that merges an intuitive teacher portal with effective management tools. Enhance educational management with integrated AI that facilitates student management, lesson plan creation, and personalized support. Access student profiles, track attendance, and monitor progress seamlessly. Our AI assistant further provides valuable insights for personalized learning. The management portal serves as a comprehensive tool for overseeing classes, evaluating student performance, and optimizing educational outcomes.",
-    ImageSrc:RigelDesktop,
+    ImageSrc:MancheDesktop,
   },{
     id:2,
     title: "Mobile App",
-    description:"Introducing Rigel's mobile app, crafted specifically for the Ethiopian community, empowers parents to actively participate in their child's academic and ethical growth. With our standout feature, the Ethical-Academical Performance Tracking system, gain deep insights into your child's character traits and social skills. Real-time class attendance updates, assessments, and announcements are at your fingertips, with Rigel, you're not just keeping pace with your child's growth, you're actively sculpting their path to success, fostering the leaders of tomorrow.",
-    ImageSrc:RigelMobile,
+    description:"Introducing Manche's mobile app, crafted specifically for the Ethiopian community, empowers parents to actively participate in their child's academic and ethical growth. With our standout feature, the Ethical-Academical Performance Tracking system, gain deep insights into your child's character traits and social skills. Real-time class attendance updates, assessments, and announcements are at your fingertips, with Manche, you're not just keeping pace with your child's growth, you're actively sculpting their path to success, fostering the leaders of tomorrow.",
+    ImageSrc:MancheMobile,
   }
 ]
 
